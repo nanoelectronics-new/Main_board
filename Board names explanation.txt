@@ -1,0 +1,14 @@
+RFBoardLayoutGen0_v01.1 - first edition of the board (long one)
+RFBoardLayoutGen0_v01.2 - board without copper routes (just airwires), with all restricted areas: tRestrict - sample pad, screws and grounding pads 
+												  vRestrict - cooper plate and SMP gnd pads
+										     		  bRestrict - cooper plate and grounding pads
+												  Dimensions borders - around CPWG lines 
+
+RFBoardLayoutGen0_v01.2routed - copper routed version board 
+RFBoardLayoutGen0_v01.3 - fixed version of the 1.2routed version - PROCESSED BOARD
+
+
+
+RFBoardLayoutGen0_v02.1routed -  board without copper routes (just airwires), with all restricted areas
+RFBoardLayoutGen0_v02.1work - routed board with all restricted areas
+RFBoardLayoutGen0_v02.1 - final version of the 2.1 version 

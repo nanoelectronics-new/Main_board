@@ -1,0 +1,4 @@
+# destination rectangle 0
+
+ROTATE =R64.000000 E$9;
+MOVE E$9 (35.000000 64.550000);
