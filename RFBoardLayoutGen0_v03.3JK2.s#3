@@ -1653,7 +1653,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="SampleArea_new">
+<library name="SampleArea">
 <packages>
 <package name="24DC+10RF/400MU-PADS/0.7X0.7_V2.0">
 <smd name="DC§24" x="-5.25" y="3" dx="1" dy="0.2" layer="1" roundness="100" rot="R345" cream="no"/>
@@ -1944,7 +1944,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R$30" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="L$2" library="MatchCircuit" deviceset="L_MATCH" device="" value="L_MATCH"/>
 <part name="L$4" library="MatchCircuit" deviceset="L_MATCH" device="" value="L_MATCH"/>
-<part name="U$6" library="SampleArea_new" deviceset="24DC+10RF_V2.0" device=""/>
+<part name="U$6" library="SampleArea" deviceset="24DC+10RF_V2.0" device=""/>
 <part name="U$7" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
 <part name="U$8" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
 <part name="U$9" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
