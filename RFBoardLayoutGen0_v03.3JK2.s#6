@@ -1656,14 +1656,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <library name="SampleArea">
 <packages>
 <package name="24DC+10RF/400MU-PADS/0.7X0.7_V2.0">
-<smd name="DC§24" x="-5.25" y="3" dx="1" dy="0.2" layer="1" roundness="100" rot="R345" cream="no"/>
-<smd name="DC§23" x="-5.25" y="1.5" dx="1" dy="0.2" layer="1" roundness="100" rot="R351" cream="no"/>
-<smd name="DC§22" x="-5.25" y="0" dx="1" dy="0.2" layer="1" roundness="100" cream="no"/>
-<smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.2" layer="1" roundness="100" rot="R9" cream="no"/>
-<smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.2" layer="1" roundness="100" rot="R15" cream="no"/>
-<smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="DC§06" x="3" y="5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R75" cream="no"/>
+<smd name="DC§24" x="-5.25" y="3" dx="1" dy="0.3" layer="1" roundness="100" rot="R345" cream="no"/>
+<smd name="DC§23" x="-5.25" y="1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R351" cream="no"/>
+<smd name="DC§22" x="-5.25" y="0" dx="1" dy="0.3" layer="1" roundness="100" cream="no"/>
+<smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
+<smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
+<smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
+<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
 <text x="6.135" y="-1.875" size="0.6096" layer="21" font="vector" ratio="15">11</text>
@@ -1675,23 +1675,23 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-7.135" y="-0.125" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">22</text>
 <text x="-7.135" y="-1.875" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">20</text>
 <text x="-3.25" y="-7.06" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">18</text>
-<smd name="RF$02_G11" x="-2.25" y="5.25" dx="1" dy="0.2" layer="1" rot="R93" cream="no"/>
-<smd name="RF$18_R3" x="-4" y="-4" dx="1" dy="0.2" layer="1" rot="R40" cream="no"/>
-<smd name="RF$24_R4" x="-4" y="4" dx="1" dy="0.2" layer="1" rot="R140" cream="no"/>
-<smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.2" layer="1" cream="no"/>
+<smd name="RF$02_G11" x="-2.25" y="5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
+<smd name="RF$18_R3" x="-3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
+<smd name="RF$24_R4" x="-3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
+<smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.3" layer="1" cream="no"/>
 <text x="-6.975" y="4.725" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24_R4</text>
 <text x="6.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15">12</text>
 <text x="1.875" y="-7" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">15</text>
-<smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.2" layer="1" rot="R90" cream="no"/>
-<smd name="RF$06_R1" x="4" y="4" dx="1" dy="0.2" layer="1" rot="R40" cream="no"/>
-<smd name="RF$12_R2" x="4" y="-4" dx="1" dy="0.2" layer="1" rot="R140" cream="no"/>
-<smd name="DC§03" x="-1.5" y="5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="DC§12" x="5.25" y="-3" dx="1" dy="0.2" layer="1" roundness="100" rot="R165" cream="no"/>
-<smd name="DC§11" x="5.25" y="-1.5" dx="1" dy="0.2" layer="1" roundness="100" rot="R171" cream="no"/>
-<smd name="DC§10" x="5.25" y="0" dx="1" dy="0.2" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="DC§08" x="5.25" y="1.5" dx="1" dy="0.2" layer="1" roundness="100" rot="R189" cream="no"/>
-<smd name="DC§07" x="5.25" y="3" dx="1" dy="0.2" layer="1" roundness="100" rot="R195" cream="no"/>
-<smd name="RF$09_G31" x="5.25" y="2.25" dx="1" dy="0.2" layer="1" rot="R189" cream="no"/>
+<smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="RF$06_R1" x="3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
+<smd name="RF$12_R2" x="3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
+<smd name="DC§03" x="-1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="DC§12" x="5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R165" cream="no"/>
+<smd name="DC§11" x="5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R171" cream="no"/>
+<smd name="DC§10" x="5.25" y="0" dx="1" dy="0.3" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="DC§08" x="5.25" y="1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R189" cream="no"/>
+<smd name="DC§07" x="5.25" y="3" dx="1" dy="0.3" layer="1" roundness="100" rot="R195" cream="no"/>
+<smd name="RF$09_G31" x="5.25" y="2.25" dx="1" dy="0.3" layer="1" rot="R189" cream="no"/>
 <smd name="GND$1" x="0" y="5.75" dx="2" dy="0.3" layer="1" rot="R270" cream="no"/>
 <smd name="GND$2" x="0" y="-5.75" dx="2" dy="0.3" layer="1" rot="R270" cream="no"/>
 <text x="6.135" y="-0.125" size="0.6096" layer="21" font="vector" ratio="15">10</text>
@@ -1710,28 +1710,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-8.75" y="-1" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">21_G6</text>
 <text x="-0.805" y="3.86" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
 <text x="-0.825" y="-4.505" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<smd name="RF$02_G12" x="-0.75" y="5.25" dx="1" dy="0.2" layer="1" rot="R90" cream="no"/>
+<smd name="RF$02_G12" x="-0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <text x="-0.75" y="6" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02_G1</text>
 <text x="2.75" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04_G2</text>
-<smd name="RF$04_G22" x="2.25" y="5.25" dx="1" dy="0.2" layer="1" rot="R87" cream="no"/>
-<smd name="RF$09_G32" x="5.25" y="0.75" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
-<smd name="RF$09_G33" x="5.25" y="-0.75" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
-<smd name="RF$09_G34" x="5.25" y="-2.25" dx="1" dy="0.2" layer="1" rot="R171" cream="no"/>
-<smd name="RF$21_G62" x="-5.25" y="-0.75" dx="1" dy="0.2" layer="1" cream="no"/>
-<smd name="RF$21_G64" x="-5.25" y="2.25" dx="1" dy="0.2" layer="1" rot="R351" cream="no"/>
-<smd name="RF$21_G61" x="-5.25" y="-2.25" dx="1" dy="0.2" layer="1" rot="R9" cream="no"/>
-<smd name="DC§18" x="-3" y="-5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R75" cream="no"/>
-<smd name="RF$16_G52" x="-2.25" y="-5.25" dx="1" dy="0.2" layer="1" rot="R87" cream="no"/>
-<smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.2" layer="1" rot="R90" cream="no"/>
-<smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.2" layer="1" rot="R90" cream="no"/>
-<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R90" cream="no"/>
-<smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.2" layer="1" rot="R93" cream="no"/>
-<smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
-<smd name="GND$4" x="1.375" y="4.375" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
-<smd name="GND$6" x="-1.375" y="-4.375" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
-<smd name="GND$5" x="1.375" y="-4.375" dx="1" dy="0.2" layer="1" rot="R180" cream="no"/>
+<smd name="RF$04_G22" x="2.25" y="5.25" dx="1" dy="0.3" layer="1" rot="R87" cream="no"/>
+<smd name="RF$09_G32" x="5.25" y="0.75" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
+<smd name="RF$09_G33" x="5.25" y="-0.75" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
+<smd name="RF$09_G34" x="5.25" y="-2.25" dx="1" dy="0.3" layer="1" rot="R171" cream="no"/>
+<smd name="RF$21_G62" x="-5.25" y="-0.75" dx="1" dy="0.3" layer="1" cream="no"/>
+<smd name="RF$21_G64" x="-5.25" y="2.25" dx="1" dy="0.3" layer="1" rot="R351" cream="no"/>
+<smd name="RF$21_G61" x="-5.25" y="-2.25" dx="1" dy="0.3" layer="1" rot="R9" cream="no"/>
+<smd name="DC§18" x="-3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
+<smd name="RF$16_G52" x="-2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R87" cream="no"/>
+<smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
+<smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
+<smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
+<smd name="GND$4" x="1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
+<smd name="GND$6" x="-1.375" y="-4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
+<smd name="GND$5" x="1.375" y="-4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
 <text x="6.125" y="0.75" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
 <text x="6.125" y="-1" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
 <text x="6.125" y="-2.75" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
@@ -1868,6 +1868,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 <class number="1" name="RF" width="0" drill="0">
 <clearance class="1" value="2"/>
+</class>
+<class number="2" name="RF2" width="0.5" drill="0">
+<clearance class="2" value="0.41"/>
 </class>
 </classes>
 <parts>
@@ -2043,7 +2046,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="N$5" class="1">
+<net name="N$5" class="2">
 <segment>
 <pinref part="S$7" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="78.74" x2="-15.24" y2="93.98" width="0.1524" layer="91"/>
@@ -2051,7 +2054,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="-15.24" y="78.74"/>
 </segment>
 </net>
-<net name="N$6" class="1">
+<net name="N$6" class="2">
 <segment>
 <pinref part="S$6" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="78.74" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
@@ -2976,7 +2979,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="15.24" y1="-48.26" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$5" class="0">
+<net name="DC$5" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$04_G22"/>
 <pinref part="B$2" gate="G$1" pin="OUT"/>
@@ -2997,7 +3000,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-15.24" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$10" class="0">
+<net name="DC$10" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$09_G33"/>
 <pinref part="B$3" gate="G$1" pin="OUT"/>
@@ -3018,7 +3021,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="53.34" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$1" class="0">
+<net name="DC$1" class="2">
 <segment>
 <wire x1="-30.48" y1="48.26" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R$1" gate="G$1" pin="2"/>
@@ -3055,7 +3058,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$6" gate="G$1" pin="DC§13"/>
 </segment>
 </net>
-<net name="N$3" class="1">
+<net name="N$3" class="2">
 <segment>
 <pinref part="B$1" gate="G$1" pin="OUT"/>
 <wire x1="-15.24" y1="63.5" x2="-15.24" y2="48.26" width="0.1524" layer="91"/>
@@ -3135,7 +3138,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="91.44" y="58.42"/>
 </segment>
 </net>
-<net name="N$16" class="1">
+<net name="N$16" class="2">
 <segment>
 <pinref part="B$5" gate="G$1" pin="HF"/>
 <wire x1="-15.24" y1="-81.28" x2="-15.24" y2="-96.52" width="0.1524" layer="91"/>
@@ -3143,7 +3146,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="-15.24" y="-96.52"/>
 </segment>
 </net>
-<net name="N$17" class="1">
+<net name="N$17" class="2">
 <segment>
 <pinref part="B$4" gate="G$1" pin="HF"/>
 <wire x1="15.24" y1="-81.28" x2="15.24" y2="-96.52" width="0.1524" layer="91"/>
@@ -3169,7 +3172,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-83.82" y1="-43.18" x2="-83.82" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="1">
+<net name="N$18" class="2">
 <segment>
 <pinref part="B$3" gate="G$1" pin="HF"/>
 <wire x1="88.9" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
@@ -3270,7 +3273,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-30.48" y1="-50.8" x2="-30.48" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="N$20" class="2">
 <segment>
 <pinref part="B$6" gate="G$1" pin="OUT"/>
 <wire x1="-81.28" y1="0" x2="-55.88" y2="0" width="0.1524" layer="91"/>
@@ -3305,7 +3308,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-58.42" y1="7.62" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$1" class="2">
 <segment>
 <pinref part="B$6" gate="G$1" pin="HF"/>
 <pinref part="S$1" gate="G$1" pin="1"/>
