@@ -1661,7 +1661,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§22" x="-5.25" y="0" dx="1" dy="0.3" layer="1" roundness="100" cream="no"/>
 <smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
 <smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
-<smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.2" layer="1" roundness="100" rot="R105" cream="no"/>
+<smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
 <smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>

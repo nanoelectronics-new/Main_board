@@ -1601,7 +1601,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-11.26" y1="8.625" x2="-11.26" y2="8.76" width="0.125" layer="16"/>
 <wire x1="-11.26" y1="8.76" x2="-11.625" y2="9.125" width="0.125" layer="16"/>
 <wire x1="-11.625" y1="9.125" x2="-12.125" y2="9.76" width="0.125" layer="16"/>
-<wire x1="-11" y1="8.5" x2="-11.25" y2="8.625" width="0.125" layer="1"/>
 <contactref element="U$1" pad="20"/>
 <wire x1="36.25" y1="4" x2="31.875" y2="4" width="0.125" layer="16"/>
 <wire x1="31.875" y1="4" x2="31.75" y2="4.125" width="0.125" layer="16"/>

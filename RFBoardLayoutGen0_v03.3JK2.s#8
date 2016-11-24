@@ -1869,6 +1869,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="1" name="RF" width="0" drill="0">
 <clearance class="1" value="2"/>
 </class>
+<class number="2" name="RF2" width="0.5" drill="0">
+<clearance class="2" value="0.41"/>
+</class>
 </classes>
 <parts>
 <part name="E$2" library="Glenair" deviceset="25_SOCKET_M83513(13-D" device="PINOUT2"/>
@@ -2043,7 +2046,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="N$5" class="1">
+<net name="N$5" class="2">
 <segment>
 <pinref part="S$7" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="78.74" x2="-15.24" y2="93.98" width="0.1524" layer="91"/>
@@ -2051,7 +2054,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="-15.24" y="78.74"/>
 </segment>
 </net>
-<net name="N$6" class="1">
+<net name="N$6" class="2">
 <segment>
 <pinref part="S$6" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="78.74" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
@@ -2976,7 +2979,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="15.24" y1="-48.26" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$5" class="0">
+<net name="DC$5" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$04_G22"/>
 <pinref part="B$2" gate="G$1" pin="OUT"/>
@@ -2997,7 +3000,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-15.24" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$10" class="0">
+<net name="DC$10" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$09_G33"/>
 <pinref part="B$3" gate="G$1" pin="OUT"/>
@@ -3018,7 +3021,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="53.34" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$1" class="0">
+<net name="DC$1" class="2">
 <segment>
 <wire x1="-30.48" y1="48.26" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R$1" gate="G$1" pin="2"/>
@@ -3055,7 +3058,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$6" gate="G$1" pin="DC§13"/>
 </segment>
 </net>
-<net name="N$3" class="1">
+<net name="N$3" class="2">
 <segment>
 <pinref part="B$1" gate="G$1" pin="OUT"/>
 <wire x1="-15.24" y1="63.5" x2="-15.24" y2="48.26" width="0.1524" layer="91"/>
@@ -3135,7 +3138,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="91.44" y="58.42"/>
 </segment>
 </net>
-<net name="N$16" class="1">
+<net name="N$16" class="2">
 <segment>
 <pinref part="B$5" gate="G$1" pin="HF"/>
 <wire x1="-15.24" y1="-81.28" x2="-15.24" y2="-96.52" width="0.1524" layer="91"/>
@@ -3143,7 +3146,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="-15.24" y="-96.52"/>
 </segment>
 </net>
-<net name="N$17" class="1">
+<net name="N$17" class="2">
 <segment>
 <pinref part="B$4" gate="G$1" pin="HF"/>
 <wire x1="15.24" y1="-81.28" x2="15.24" y2="-96.52" width="0.1524" layer="91"/>
@@ -3169,7 +3172,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-83.82" y1="-43.18" x2="-83.82" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="1">
+<net name="N$18" class="2">
 <segment>
 <pinref part="B$3" gate="G$1" pin="HF"/>
 <wire x1="88.9" y1="0" x2="104.14" y2="0" width="0.1524" layer="91"/>
@@ -3270,7 +3273,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-30.48" y1="-50.8" x2="-30.48" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="N$20" class="2">
 <segment>
 <pinref part="B$6" gate="G$1" pin="OUT"/>
 <wire x1="-81.28" y1="0" x2="-55.88" y2="0" width="0.1524" layer="91"/>
@@ -3305,7 +3308,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-58.42" y1="7.62" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$1" class="2">
 <segment>
 <pinref part="B$6" gate="G$1" pin="HF"/>
 <pinref part="S$1" gate="G$1" pin="1"/>

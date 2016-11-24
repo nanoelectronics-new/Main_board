@@ -3242,6 +3242,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$16" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="-68.58" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$3"/>
+<pinref part="U$6" gate="G$1" pin="GND$1"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$4"/>
+<wire x1="2.54" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="15.24"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="2.54" y="30.48"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$6"/>
+<pinref part="U$6" gate="G$1" pin="GND$5"/>
+<wire x1="-12.7" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$2"/>
+<wire x1="-2.54" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-20.32"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-35.56"/>
+</segment>
 </net>
 <net name="N$18" class="2">
 <segment>

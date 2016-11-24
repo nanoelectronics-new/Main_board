@@ -1730,12 +1730,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-1.812546875" y1="4.5" x2="0" y2="4.5" width="0.3" layer="16"/>
 <wire x1="0" y1="4.5" x2="1.812546875" y2="4.5" width="0.3" layer="16"/>
 <wire x1="1.812546875" y1="4.5" x2="2.062546875" y2="4.179978125" width="0.3" layer="16"/>
-<wire x1="1.5" y1="8.375" x2="1.5" y2="8.875" width="0.125" layer="16"/>
-<wire x1="1.5" y1="8.875" x2="2.25" y2="9.625" width="0.125" layer="16"/>
 <wire x1="1.5" y1="6.7" x2="0.575" y2="6.7" width="0.3" layer="16"/>
 <wire x1="0.575" y1="6.7" x2="0" y2="6.125" width="0.3" layer="16"/>
 <wire x1="0" y1="6.125" x2="0" y2="4.5" width="0.3" layer="16"/>
-<wire x1="1.5" y1="6.7" x2="1.5" y2="8.375" width="0" layer="19" extent="16-16"/>
+<wire x1="2.25" y1="9.625" x2="2.25" y2="7.125" width="0.125" layer="16"/>
+<wire x1="2.25" y1="7.125" x2="1.5" y2="6.7" width="0.125" layer="16"/>
 </signal>
 <signal name="D$6">
 <contactref element="LP$2" pad="$4"/>
@@ -2042,7 +2041,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="6" y1="-9.75" x2="4.875" y2="-10.375" width="0.125" layer="3"/>
 <wire x1="4.875" y1="-10.375" x2="2.375" y2="-10.375" width="0.125" layer="3"/>
 <wire x1="2.375" y1="-10.375" x2="1.875" y2="-9.875" width="0.125" layer="3"/>
-<wire x1="5.25" y1="-8.5" x2="6" y2="-9.75" width="0" layer="19" extent="1-16"/>
 <via x="6" y="-9.75" extent="1-16" drill="0.2"/>
 <wire x1="6" y1="-9.75" x2="6.875" y2="-8.75" width="0.125" layer="3"/>
 <contactref element="B$4" pad="LF"/>
@@ -3560,8 +3558,8 @@ Covered vias can be set in Masks (Limit).
 <wire x1="1.5" y1="-8.375" x2="1.5" y2="-6.75" width="0.5" layer="1"/>
 <wire x1="1.5" y1="-6.75" x2="0.75" y2="-5.75" width="0.5" layer="1"/>
 <wire x1="0.75" y1="-5.75" x2="0.75" y2="-5.25" width="0.1" layer="1"/>
-<wire x1="2.25" y1="-5.25" x2="2.25" y2="-5.625" width="0.1" layer="1"/>
-<wire x1="2.25" y1="-5.625" x2="1.5" y2="-6.75" width="0.5" layer="1"/>
+<wire x1="2.25" y1="-5.25" x2="2.25" y2="-5.75" width="0.1" layer="1"/>
+<wire x1="2.25" y1="-5.75" x2="1.5" y2="-6.75" width="0.5" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="B$5" pad="OUT"/>
