@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="5" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="2" fill="13" visible="no" active="no"/>
+<layer number="3" name="Route3" color="2" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -21,7 +21,7 @@
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="11" fill="10" visible="no" active="no"/>
+<layer number="14" name="Route14" color="11" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="8" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="14" fill="3" visible="no" active="no"/>
-<layer number="30" name="bStop" color="15" fill="6" visible="no" active="no"/>
+<layer number="30" name="bStop" color="15" fill="10" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
@@ -1903,7 +1903,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <clearance class="0" value="0.15"/>
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0.5" drill="0">
 <clearance class="2" value="0.41"/>
@@ -3241,6 +3241,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="U$16" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="-68.58" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$3"/>
+<pinref part="U$6" gate="G$1" pin="GND$1"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$4"/>
+<wire x1="2.54" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="15.24"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="2.54" y="30.48"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$6"/>
+<pinref part="U$6" gate="G$1" pin="GND$5"/>
+<wire x1="-12.7" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$2"/>
+<wire x1="-2.54" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-20.32"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-35.56"/>
 </segment>
 </net>
 <net name="N$18" class="2">

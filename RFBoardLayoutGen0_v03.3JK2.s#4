@@ -1957,7 +1957,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP4" library="testpad" deviceset="TP" device="TP07SQ"/>
 <part name="R$1" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$3" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
-<part name="R$5" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$6" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$24" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$23" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
@@ -1992,6 +1991,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$12" library="LPFilter" deviceset="LP-FILTER/VARACTOR/0402" device=""/>
 <part name="U$13" library="LPFilter" deviceset="LP-FILTER/VARACTOR/0402" device=""/>
 <part name="U$14" library="LPFilter" deviceset="LP-FILTER/VARACTOR/0402" device=""/>
+<part name="U$15" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2051,7 +2051,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="TP4" gate="G$1" x="-132.08" y="-91.44"/>
 <instance part="R$1" gate="G$1" x="-30.48" y="50.8"/>
 <instance part="R$3" gate="G$1" x="-10.16" y="55.88"/>
-<instance part="R$5" gate="G$1" x="17.78" y="55.88"/>
 <instance part="R$6" gate="G$1" x="30.48" y="50.8"/>
 <instance part="R$24" gate="G$1" x="-60.96" y="17.78" rot="R90"/>
 <instance part="R$23" gate="G$1" x="-60.96" y="7.62" rot="R90"/>
@@ -2086,6 +2085,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="U$12" gate="G$1" x="48.26" y="-43.18"/>
 <instance part="U$13" gate="G$1" x="48.26" y="38.1" rot="R180"/>
 <instance part="U$14" gate="G$1" x="-48.26" y="38.1" rot="R180"/>
+<instance part="U$15" gate="G$1" x="-58.42" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -2193,9 +2193,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="248.92" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="17.78" y1="58.42" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R$5" gate="G$1" pin="1"/>
-<label x="22.86" y="55.88" size="1.778" layer="95"/>
+<label x="-48.26" y="116.84" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U$13" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="109.22" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="116.84" x2="-48.26" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D$6" class="0">
@@ -3277,14 +3279,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="58.42" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R$5" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="53.34" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="DC§05"/>
-<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="B$4" gate="G$1" pin="OUT"/>
@@ -3367,6 +3361,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="B$6" gate="G$1" pin="HF"/>
 <pinref part="S$1" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="0" x2="-119.38" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="2"/>
+<wire x1="-58.42" y1="43.18" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="43.18" x2="-58.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

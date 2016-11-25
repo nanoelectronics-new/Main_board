@@ -1977,7 +1977,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R$10" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$11" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$12" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
-<part name="R$27" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$29" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$30" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="L$2" library="MatchCircuit" deviceset="L_MATCH" device="" value="L_MATCH"/>
@@ -2072,7 +2071,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R$10" gate="G$1" x="60.96" y="-12.7" rot="R270"/>
 <instance part="R$11" gate="G$1" x="60.96" y="-22.86" rot="R270"/>
 <instance part="R$12" gate="G$1" x="30.48" y="-53.34" rot="R180"/>
-<instance part="R$27" gate="G$1" x="5.08" y="-60.96" rot="R180"/>
 <instance part="R$29" gate="G$1" x="-25.4" y="-60.96" rot="R180"/>
 <instance part="R$30" gate="G$1" x="-30.48" y="-53.34" rot="R180"/>
 <instance part="L$2" gate="G$1" x="71.12" y="30.48" rot="MR90"/>
@@ -2292,9 +2290,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="284.48" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="5.08" y1="-63.5" x2="5.08" y2="-68.58" width="0.1524" layer="91"/>
-<label x="5.08" y="-68.58" size="1.778" layer="95"/>
-<pinref part="R$27" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="-116.84" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-53.34" y="-116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="-48.26" x2="48.26" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-111.76" x2="-48.26" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="2"/>
+<pinref part="U$16" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="-58.42" x2="-55.88" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-48.26" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-48.26" y="-111.76"/>
+<junction x="-48.26" y="-48.26"/>
 </segment>
 </net>
 <net name="D$16" class="0">
@@ -2888,15 +2898,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$6" gate="G$1" pin="DC§06"/>
 </segment>
 </net>
-<net name="DC$15" class="0">
-<segment>
-<wire x1="5.08" y1="-58.42" x2="5.08" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="R$27" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="-48.26" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="DC§15"/>
-<wire x1="15.24" y1="-48.26" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="DC$5" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$04_G22"/>
@@ -3378,21 +3379,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="B$6" gate="G$1" pin="HF"/>
 <pinref part="S$1" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="0" x2="-119.38" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$12" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="-48.26" x2="48.26" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-111.76" x2="-48.26" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="U$11" gate="G$1" pin="2"/>
-<pinref part="U$16" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="-58.42" x2="-55.88" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-48.26" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-48.26" y="-111.76"/>
-<junction x="-48.26" y="-48.26"/>
 </segment>
 </net>
 </nets>
