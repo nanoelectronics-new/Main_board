@@ -1701,7 +1701,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
 <text x="6.135" y="-1.875" size="0.6096" layer="21" font="vector" ratio="15">11</text>
 <text x="-2.915" y="5.96" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">01</text>
-<text x="-1.275" y="5.87" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">03</text>
+<text x="-1.255" y="5.85" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">03</text>
 <text x="3.595" y="5.955" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">06</text>
 <text x="-7.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24</text>
 <text x="-7.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">23</text>
@@ -1728,7 +1728,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="GND$2" x="0" y="-5.75" dx="2" dy="0.3" layer="1" rot="R270" cream="no"/>
 <text x="6.135" y="-0.125" size="0.6096" layer="21" font="vector" ratio="15">10</text>
 <text x="3.595" y="-6.915" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">13</text>
-<text x="-1.31" y="-6.83" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
+<text x="-1.31" y="-6.77" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
 <text x="-7.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">19</text>
 <text x="-2.09" y="5.96" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02</text>
 <text x="1.05" y="5.955" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04</text>
@@ -1739,8 +1739,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-0.43" y="-6.925" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">16</text>
 <text x="-7.025" y="-5.4" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">18_R3</text>
 <text x="-7.13" y="-1" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">21</text>
-<text x="-0.805" y="3.86" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="-0.825" y="-4.505" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
+<text x="-1.075" y="3.27" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
+<text x="-1.025" y="-4.095" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
 <smd name="RF$02_G12" x="-0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <text x="-0.5" y="5.94" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02</text>
 <text x="2.67" y="5.965" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04</text>

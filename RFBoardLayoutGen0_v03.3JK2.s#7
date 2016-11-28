@@ -398,8 +398,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <rectangle x1="1.2" y1="-0.4" x2="1.7" y2="0.4" layer="51"/>
 </package>
 <package name="LP-FILTER/RESISTOR/0603_BOTTOM">
-<text x="-1.285" y="1.55" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.3" y="-1.87" size="0.4064" layer="27">&gt;VALUE</text>
 <smd name="OUT" x="0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <smd name="IN" x="-0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <rectangle x1="-0.1" y1="-0.71" x2="0.1" y2="0.69" layer="42" rot="R180"/>
