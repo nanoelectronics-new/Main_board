@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="5" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="2" fill="13" visible="no" active="no"/>
+<layer number="3" name="Route3" color="2" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -21,7 +21,7 @@
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="11" fill="10" visible="no" active="no"/>
+<layer number="14" name="Route14" color="11" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="8" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="14" fill="3" visible="no" active="no"/>
-<layer number="30" name="bStop" color="15" fill="6" visible="no" active="no"/>
+<layer number="30" name="bStop" color="15" fill="10" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
@@ -398,8 +398,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <rectangle x1="1.2" y1="-0.4" x2="1.7" y2="0.4" layer="51"/>
 </package>
 <package name="LP-FILTER/RESISTOR/0603_BOTTOM">
-<text x="-1.285" y="1.55" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.3" y="-1.87" size="0.4064" layer="27">&gt;VALUE</text>
 <smd name="OUT" x="0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <smd name="IN" x="-0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <rectangle x1="-0.1" y1="-0.71" x2="0.1" y2="0.69" layer="42" rot="R180"/>
@@ -1698,7 +1696,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
 <smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
 <smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
@@ -1717,7 +1714,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.3" layer="1" cream="no"/>
 <text x="-6.975" y="4.725" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24_R4</text>
 <text x="6.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15">12</text>
-<text x="1.875" y="-7" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">15</text>
 <smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$06_R1" x="3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
 <smd name="RF$12_R2" x="3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
@@ -1735,7 +1731,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-1.45" y="-7.06" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
 <text x="-7.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">19</text>
 <text x="-2.5" y="6" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02_G1</text>
-<text x="1.875" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">05</text>
 <text x="1" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04_G2</text>
 <text x="4.825" y="4.925" size="0.6096" layer="21" font="vector" ratio="15">06_R1</text>
 <text x="6.125" y="2.5" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
@@ -1761,7 +1756,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
-<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
 <smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
 <smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
@@ -1782,7 +1776,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <symbol name="24DC+10RF_V2.0">
 <pin name="DC§01" x="-30.48" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§03" x="-15.24" y="35.56" length="middle" rot="R270"/>
-<pin name="DC§05" x="15.24" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§06" x="30.48" y="35.56" length="middle" rot="R270"/>
 <wire x1="-40.64" y1="33.02" x2="-40.64" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="40.64" y1="-33.02" x2="40.64" y2="33.02" width="0.254" layer="94"/>
@@ -1794,7 +1787,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pin name="DC§12" x="45.72" y="-20.32" length="middle" rot="R180"/>
 <pin name="DC§13" x="30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§07" x="45.72" y="20.32" length="middle" rot="R180"/>
-<pin name="DC§15" x="15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§17" x="-15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§18" x="-30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§019" x="-45.72" y="-20.32" length="middle"/>
@@ -1843,7 +1835,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§01" pad="DC$01"/>
 <connect gate="G$1" pin="DC§019" pad="DC§19"/>
 <connect gate="G$1" pin="DC§03" pad="DC§03"/>
-<connect gate="G$1" pin="DC§05" pad="DC§05"/>
 <connect gate="G$1" pin="DC§06" pad="DC§06"/>
 <connect gate="G$1" pin="DC§07" pad="DC§07"/>
 <connect gate="G$1" pin="DC§08" pad="DC§08"/>
@@ -1851,7 +1842,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§11" pad="DC§11"/>
 <connect gate="G$1" pin="DC§12" pad="DC§12"/>
 <connect gate="G$1" pin="DC§13" pad="DC$13"/>
-<connect gate="G$1" pin="DC§15" pad="DC§15"/>
 <connect gate="G$1" pin="DC§17" pad="DC§17"/>
 <connect gate="G$1" pin="DC§18" pad="DC§18"/>
 <connect gate="G$1" pin="DC§20" pad="DC§20"/>
@@ -1903,7 +1893,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <clearance class="0" value="0.15"/>
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0.5" drill="0">
 <clearance class="2" value="0.41"/>
@@ -1977,7 +1967,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R$10" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$11" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$12" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
-<part name="R$27" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$29" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="R$30" library="LPFilter" deviceset="LP-FILTER/RESISTOR/0603" device="" value="10K"/>
 <part name="L$2" library="MatchCircuit" deviceset="L_MATCH" device="" value="L_MATCH"/>
@@ -1992,6 +1981,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$13" library="LPFilter" deviceset="LP-FILTER/VARACTOR/0402" device=""/>
 <part name="U$14" library="LPFilter" deviceset="LP-FILTER/VARACTOR/0402" device=""/>
 <part name="U$15" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
+<part name="U$16" library="LPFilter" deviceset="LP-FILTER/CAPACITOR/0603" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2071,7 +2061,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R$10" gate="G$1" x="60.96" y="-12.7" rot="R270"/>
 <instance part="R$11" gate="G$1" x="60.96" y="-22.86" rot="R270"/>
 <instance part="R$12" gate="G$1" x="30.48" y="-53.34" rot="R180"/>
-<instance part="R$27" gate="G$1" x="5.08" y="-60.96" rot="R180"/>
 <instance part="R$29" gate="G$1" x="-25.4" y="-60.96" rot="R180"/>
 <instance part="R$30" gate="G$1" x="-30.48" y="-53.34" rot="R180"/>
 <instance part="L$2" gate="G$1" x="71.12" y="30.48" rot="MR90"/>
@@ -2085,7 +2074,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="U$12" gate="G$1" x="48.26" y="-43.18"/>
 <instance part="U$13" gate="G$1" x="48.26" y="38.1" rot="R180"/>
 <instance part="U$14" gate="G$1" x="-48.26" y="38.1" rot="R180"/>
-<instance part="U$15" gate="G$1" x="-58.42" y="53.34"/>
+<instance part="U$15" gate="G$1" x="-58.42" y="63.5"/>
+<instance part="U$16" gate="G$1" x="-55.88" y="-63.5" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2198,6 +2188,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-48.26" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="109.22" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="116.84" x2="-48.26" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="2"/>
+<wire x1="-58.42" y1="43.18" x2="-58.42" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="43.18" x2="-58.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="109.22" x2="-48.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-48.26" y="109.22"/>
+<junction x="-48.26" y="43.18"/>
 </segment>
 </net>
 <net name="D$6" class="0">
@@ -2283,9 +2280,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="284.48" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="5.08" y1="-63.5" x2="5.08" y2="-68.58" width="0.1524" layer="91"/>
-<label x="5.08" y="-68.58" size="1.778" layer="95"/>
-<pinref part="R$27" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="-116.84" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-53.34" y="-116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="-48.26" x2="48.26" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-111.76" x2="-48.26" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="2"/>
+<pinref part="U$16" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="-58.42" x2="-55.88" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-48.26" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-111.76" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-48.26" y="-111.76"/>
+<junction x="-48.26" y="-48.26"/>
 </segment>
 </net>
 <net name="D$16" class="0">
@@ -2879,15 +2888,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$6" gate="G$1" pin="DC§06"/>
 </segment>
 </net>
-<net name="DC$15" class="0">
-<segment>
-<wire x1="5.08" y1="-58.42" x2="5.08" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="R$27" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="-48.26" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="DC§15"/>
-<wire x1="15.24" y1="-48.26" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="DC$5" class="2">
 <segment>
 <pinref part="U$6" gate="G$1" pin="RF$04_G22"/>
@@ -3224,6 +3224,36 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="279.4" y1="15.24" x2="284.48" y2="15.24" width="0.1524" layer="91"/>
 <label x="284.48" y="15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="1"/>
+<wire x1="-58.42" y1="68.58" x2="-58.42" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$16" gate="G$1" pin="1"/>
+<wire x1="-55.88" y1="-68.58" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$3"/>
+<pinref part="U$6" gate="G$1" pin="GND$1"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$4"/>
+<wire x1="2.54" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="15.24"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="2.54" y="30.48"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$6"/>
+<pinref part="U$6" gate="G$1" pin="GND$5"/>
+<wire x1="-12.7" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$2"/>
+<wire x1="-2.54" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-20.32"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-35.56"/>
+</segment>
 </net>
 <net name="N$18" class="2">
 <segment>
@@ -3361,14 +3391,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="B$6" gate="G$1" pin="HF"/>
 <pinref part="S$1" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="0" x2="-119.38" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$15" gate="G$1" pin="2"/>
-<wire x1="-58.42" y1="43.18" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="2"/>
-<wire x1="-48.26" y1="43.18" x2="-58.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

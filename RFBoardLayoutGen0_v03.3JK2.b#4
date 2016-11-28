@@ -8,9 +8,9 @@
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="5" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="5" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="2" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -22,20 +22,20 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="8" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="14" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="15" fill="10" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -482,6 +482,13 @@ AREA !!</text>
 <text x="27.25" y="15.375" size="0.8128" layer="100" rot="R180">tell beta to put Cu on walls here</text>
 <text x="27.375" y="-16.875" size="0.8128" layer="100" rot="R180">tell beta to put Cu on walls here</text>
 <text x="-9.625" y="-14.375" size="0.8128" layer="100" rot="R180">tell beta to put Cu on walls here</text>
+<text x="-4.5" y="14.25" size="1.778" layer="3">G1</text>
+<text x="-4.5" y="13.5" size="1.778" layer="21">G1</text>
+<text x="2" y="13.5" size="1.778" layer="21">G2</text>
+<text x="13" y="3.375" size="1.778" layer="21">G3</text>
+<text x="2" y="-15" size="1.778" layer="21">G4</text>
+<text x="-4.625" y="-15" size="1.778" layer="21">G5</text>
+<text x="-13" y="1.25" size="1.778" layer="21">G6</text>
 </plain>
 <libraries>
 <library name="Glenair">
@@ -573,8 +580,6 @@ AREA !!</text>
 <rectangle x1="-1.45" y1="-0.4" x2="-0.95" y2="0.4" layer="52" rot="R180"/>
 </package>
 <package name="LP-FILTER/RESISTOR/0603_BOTTOM">
-<text x="-1.285" y="1.55" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.3" y="-1.87" size="0.4064" layer="27">&gt;VALUE</text>
 <smd name="OUT" x="0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <smd name="IN" x="-0.925" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <rectangle x1="-0.1" y1="-0.71" x2="0.1" y2="0.69" layer="42" rot="R180"/>
@@ -584,8 +589,8 @@ AREA !!</text>
 <rectangle x1="-0.775" y1="-0.41" x2="-0.275" y2="0.39" layer="52" rot="R180"/>
 </package>
 <package name="LP-FILTER/CAPACITOR/0603_BOTTOM">
-<smd name="OUT" x="0.8" y="0" dx="1.3" dy="0.9" layer="16" rot="R180"/>
-<smd name="IN" x="-0.8" y="0" dx="1.3" dy="0.9" layer="16" rot="R180"/>
+<smd name="OUT" x="0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
+<smd name="IN" x="-0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
 <rectangle x1="-0.1" y1="-0.71" x2="0.1" y2="0.69" layer="42" rot="R180"/>
 <rectangle x1="0.15" y1="-0.41" x2="0.65" y2="0.39" layer="52" rot="R180"/>
 <rectangle x1="-0.05" y1="-0.06" x2="0.05" y2="0.74" layer="52" rot="R270"/>
@@ -639,15 +644,6 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <smd name="P$1" x="0" y="-0.75" dx="1.5" dy="0.3" layer="16" rot="R90" stop="no" thermals="no" cream="no"/>
 <smd name="P$3" x="0.55" y="0.03" dx="0.8" dy="0.3" layer="16" rot="R180" stop="no" thermals="no" cream="no"/>
 <smd name="P$4" x="0" y="-0.06" dx="1" dy="0.125" layer="16" rot="R180" stop="no" thermals="no" cream="no"/>
-</package>
-</packages>
-</library>
-<library name="PADS">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SMD0.8-0,5">
-<smd name="1" x="0" y="0" dx="0.8" dy="0.5" layer="1"/>
 </package>
 </packages>
 </library>
@@ -799,7 +795,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
 <smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
 <smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
@@ -818,7 +813,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.3" layer="1" cream="no"/>
 <text x="-6.975" y="4.725" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24_R4</text>
 <text x="6.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15">12</text>
-<text x="1.875" y="-7" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">15</text>
 <smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$06_R1" x="3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
 <smd name="RF$12_R2" x="3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
@@ -836,7 +830,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-1.45" y="-7.06" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
 <text x="-7.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">19</text>
 <text x="-2.5" y="6" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02_G1</text>
-<text x="1.875" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">05</text>
 <text x="1" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04_G2</text>
 <text x="4.825" y="4.925" size="0.6096" layer="21" font="vector" ratio="15">06_R1</text>
 <text x="6.125" y="2.5" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
@@ -862,7 +855,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
-<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
 <smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
 <smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
@@ -891,10 +883,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <clearance class="0" value="0.15"/>
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0.5" drill="0">
-<clearance class="2" value="0.41"/>
+<clearance class="2" value="0.1"/>
 </class>
 </classes>
 <designrules name="PCB-POOL HighSpec_ML6+ *">
@@ -1092,7 +1084,6 @@ Covered vias can be set in Masks (Limit).
 <element name="B$8" library="Bias tee" package="BIAS_TEE_DOWN_0603" value="BIASTEEDOWN" x="9.75" y="6.75" rot="MR180"/>
 <element name="S$1" library="RF Connectors" package="SMP_STRAIGHT_MINI_WIDE" value="MC-921WIDE" x="-15.5625" y="0" rot="R270"/>
 <element name="B$9" library="Bias tee" package="BIAS_TEE_UP_0603" value="BIASTEEUP" x="9.75" y="-6.75" rot="MR180"/>
-<element name="E$30" library="PADS" package="SMD0.8-0,5" value="" x="12.5" y="-6.75" rot="MR0"/>
 <element name="B$10" library="Bias tee" package="BIAS_TEE_DOWN_0603" value="BIASTEEDOWN" x="9.75" y="-10.25" rot="MR180"/>
 <element name="LP$1" library="LPFilter" package="LP-FILTER/1_STAGE/OS/0603_TOP" value="LP-FILTER/1-STAGETOP" x="-18" y="9.75"/>
 <element name="LP$2" library="LPFilter" package="LP-FILTER/1_STAGE/OS/0603_TOP" value="LP-FILTER/1-STAGETOP" x="-18" y="6.625"/>
@@ -1166,16 +1157,16 @@ Covered vias can be set in Masks (Limit).
 <element name="L$2" library="MatchCircuit" package="L_MATCH" value="L_MATCH" x="4.7725" y="4.65" rot="MR140"/>
 <element name="L$4" library="MatchCircuit" package="L_MATCH" value="L_MATCH" x="-4.7725" y="-4.65" rot="MR320"/>
 <element name="U$6" library="SampleArea" package="24DC+10RF/400MU-PADS/0.7X0.7_V2.0" value="24DC+10RF_V2.0" x="0" y="0"/>
-<element name="U$7" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="-5.75" y="8.125"/>
-<element name="U$8" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="-5.75" y="-8.125"/>
-<element name="U$9" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="7.375" y="-8.25" rot="R270"/>
-<element name="U$10" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="7.375" y="8.25" rot="R90"/>
+<element name="U$7" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="-5.75" y="8.625"/>
+<element name="U$8" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="-5.75" y="-8.75"/>
+<element name="U$9" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="7.36875" y="-8.18125" rot="R270"/>
+<element name="U$10" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="7.4125" y="8.1875" rot="R90"/>
 <element name="U$11" library="LPFilter" package="LP-FILTER/VARACTOR/0402" value="LP-FILTER/VARACTOR/0402" x="-2.5125" y="-3.64375" rot="R310"/>
 <element name="U$12" library="LPFilter" package="LP-FILTER/VARACTOR/0402" value="LP-FILTER/VARACTOR/0402" x="2.5125" y="-3.64375" rot="R230"/>
 <element name="U$13" library="LPFilter" package="LP-FILTER/VARACTOR/0402" value="LP-FILTER/VARACTOR/0402" x="2.5125" y="3.64375" rot="R130"/>
 <element name="U$14" library="LPFilter" package="LP-FILTER/VARACTOR/0402" value="LP-FILTER/VARACTOR/0402" x="-2.5125" y="3.64375" rot="R50"/>
-<element name="U$15" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="1.5" y="7.5" rot="R270"/>
-<element name="U$16" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="1.5" y="-7.5" rot="R90"/>
+<element name="U$15" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="0.25" y="8" rot="R270"/>
+<element name="U$16" library="LPFilter" package="LP-FILTER/CAPACITOR/0603_BOTTOM" value="LP-FILTER/CAPACITOR/0603" x="0.25" y="-8" rot="R90"/>
 </elements>
 <signals>
 <signal name="S$42">
@@ -1424,27 +1415,39 @@ Covered vias can be set in Masks (Limit).
 <polygon width="0.15" layer="2" pour="cutout">
 <vertex x="6.06" y="-8.49"/>
 <vertex x="4.5" y="-8.5"/>
+<vertex x="0.25" y="-8.5"/>
+<vertex x="0.25" y="-6.5"/>
+<vertex x="-0.25" y="-6.5"/>
+<vertex x="-0.25" y="-8.5"/>
 <vertex x="-6" y="-8.5"/>
 <vertex x="-9" y="-5.5"/>
-<vertex x="-9" y="-0.5"/>
-<vertex x="-9" y="0.5"/>
 <vertex x="-9" y="5.5"/>
 <vertex x="-6" y="8.5"/>
+<vertex x="-0.25" y="8.5"/>
+<vertex x="-0.25" y="6.5"/>
+<vertex x="0.25" y="6.5"/>
+<vertex x="0.25" y="8.5"/>
 <vertex x="6" y="8.5"/>
 <vertex x="9" y="5.5"/>
-<vertex x="9" y="0.5"/>
-<vertex x="9" y="-0.5"/>
 <vertex x="9" y="-5.5"/>
 </polygon>
 <polygon width="0.15" layer="3" pour="cutout">
 <vertex x="6.06" y="-8.49"/>
 <vertex x="4.5" y="-8.5"/>
+<vertex x="0.25" y="-8.5"/>
+<vertex x="0.25" y="-6.5"/>
+<vertex x="-0.25" y="-6.5"/>
+<vertex x="-0.25" y="-8.5"/>
 <vertex x="-6" y="-8.5"/>
 <vertex x="-9" y="-5.5"/>
 <vertex x="-9" y="-0.5"/>
 <vertex x="-9" y="0.5"/>
 <vertex x="-9" y="5.5"/>
 <vertex x="-6" y="8.5"/>
+<vertex x="-0.25" y="8.5"/>
+<vertex x="-0.25" y="6.5"/>
+<vertex x="0.25" y="6.5"/>
+<vertex x="0.25" y="8.5"/>
 <vertex x="6" y="8.5"/>
 <vertex x="9" y="5.5"/>
 <vertex x="9" y="0.5"/>
@@ -1454,12 +1457,20 @@ Covered vias can be set in Masks (Limit).
 <polygon width="0.15" layer="14" pour="cutout">
 <vertex x="6.06" y="-8.49"/>
 <vertex x="4.5" y="-8.5"/>
+<vertex x="0.25" y="-8.5"/>
+<vertex x="0.25" y="-6.5"/>
+<vertex x="-0.25" y="-6.5"/>
+<vertex x="-0.25" y="-8.5"/>
 <vertex x="-6" y="-8.5"/>
 <vertex x="-9" y="-5.5"/>
 <vertex x="-9" y="-0.5"/>
 <vertex x="-9" y="0.5"/>
 <vertex x="-9" y="5.5"/>
 <vertex x="-6" y="8.5"/>
+<vertex x="-0.25" y="8.5"/>
+<vertex x="-0.25" y="6.5"/>
+<vertex x="0.25" y="6.5"/>
+<vertex x="0.25" y="8.5"/>
 <vertex x="6" y="8.5"/>
 <vertex x="9" y="5.5"/>
 <vertex x="9" y="0.5"/>
@@ -1469,12 +1480,20 @@ Covered vias can be set in Masks (Limit).
 <polygon width="0.15" layer="15" pour="cutout">
 <vertex x="6.06" y="-8.49"/>
 <vertex x="4.5" y="-8.5"/>
+<vertex x="0.25" y="-8.5"/>
+<vertex x="0.25" y="-6.5"/>
+<vertex x="-0.25" y="-6.5"/>
+<vertex x="-0.25" y="-8.5"/>
 <vertex x="-6" y="-8.5"/>
 <vertex x="-9" y="-5.5"/>
 <vertex x="-9" y="-0.5"/>
 <vertex x="-9" y="0.5"/>
 <vertex x="-9" y="5.5"/>
 <vertex x="-6" y="8.5"/>
+<vertex x="-0.25" y="8.5"/>
+<vertex x="-0.25" y="6.5"/>
+<vertex x="0.25" y="6.5"/>
+<vertex x="0.25" y="8.5"/>
 <vertex x="6" y="8.5"/>
 <vertex x="9" y="5.5"/>
 <vertex x="9" y="0.5"/>
@@ -1484,12 +1503,20 @@ Covered vias can be set in Masks (Limit).
 <polygon width="0.15" layer="1" pour="cutout">
 <vertex x="6.06" y="-8.49"/>
 <vertex x="4.5" y="-8.5"/>
+<vertex x="0.25" y="-8.5"/>
+<vertex x="0.25" y="-6.5"/>
+<vertex x="-0.25" y="-6.5"/>
+<vertex x="-0.25" y="-8.5"/>
 <vertex x="-6" y="-8.5"/>
 <vertex x="-9" y="-5.5"/>
 <vertex x="-9" y="-0.5"/>
 <vertex x="-9" y="0.5"/>
 <vertex x="-9" y="5.5"/>
 <vertex x="-6" y="8.5"/>
+<vertex x="-0.25" y="8.5"/>
+<vertex x="-0.25" y="6.5"/>
+<vertex x="0.25" y="6.5"/>
+<vertex x="0.25" y="8.5"/>
 <vertex x="6" y="8.5"/>
 <vertex x="9" y="5.5"/>
 <vertex x="9" y="0.5"/>
@@ -1521,31 +1548,6 @@ Covered vias can be set in Masks (Limit).
 <signal name="S$182">
 </signal>
 <signal name="S$17" class="1">
-</signal>
-<signal name="S$215">
-<via x="-3.8725" y="3.89" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$167">
-<via x="-4.2125" y="4.18" extent="1-16" drill="0.2"/>
-<via x="-4.2125" y="4.18" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$116">
-<via x="-3.86" y="-3.88375" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$169">
-<via x="-4.20625" y="-4.17375" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$145">
-<via x="3.86625" y="-3.88375" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$172">
-<via x="4.20625" y="-4.17375" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$214">
-<via x="4.2125" y="4.18" extent="1-16" drill="0.2"/>
-</signal>
-<signal name="S$173">
-<via x="3.8725" y="3.89" extent="1-16" drill="0.2"/>
 </signal>
 <signal name="S$1">
 <via x="21.1875" y="0" extent="1-16" drill="0.2"/>
@@ -1593,8 +1595,8 @@ Covered vias can be set in Masks (Limit).
 </signal>
 <signal name="D$2">
 <contactref element="LP$10" pad="$4"/>
-<via x="-2.75" y="10.125" extent="1-16" drill="0.2"/>
-<wire x1="-2.75" y1="10.125" x2="-3.25" y2="10.5" width="0.125" layer="14"/>
+<via x="-3.25" y="10" extent="1-16" drill="0.2"/>
+<wire x1="-3.25" y1="10" x2="-3.25" y2="10.5" width="0.125" layer="14"/>
 <wire x1="-3.25" y1="10.5" x2="-9.5" y2="10.5" width="0.125" layer="14"/>
 <wire x1="-9.5" y1="10.5" x2="-11.25" y2="8.625" width="0.125" layer="14"/>
 <via x="-11.25" y="8.625" extent="1-16" drill="0.2"/>
@@ -1613,16 +1615,15 @@ Covered vias can be set in Masks (Limit).
 <wire x1="8.625" y1="9.75" x2="7.25" y2="11.125" width="0.125" layer="3"/>
 <wire x1="7.25" y1="11.125" x2="-2.25" y2="11.125" width="0.125" layer="3"/>
 <wire x1="-2.25" y1="11.125" x2="-2.75" y2="10.625" width="0.125" layer="3"/>
-<wire x1="-2.75" y1="10.625" x2="-2.75" y2="10.125" width="0.125" layer="3"/>
+<wire x1="-2.75" y1="10.625" x2="-3.25" y2="10" width="0.125" layer="3"/>
 <contactref element="B$1" pad="LF"/>
 <wire x1="-3.35" y1="8.125" x2="-3.35" y2="9.525" width="0.125" layer="1"/>
-<wire x1="-3.35" y1="9.525" x2="-2.75" y2="10.125" width="0.125" layer="1"/>
+<wire x1="-3.35" y1="9.525" x2="-3.25" y2="10" width="0.125" layer="1"/>
 </signal>
 <signal name="D$3">
 <contactref element="LP$9" pad="$4"/>
-<via x="-0.625" y="10.375" extent="1-16" drill="0.2"/>
-<wire x1="-0.625" y1="10.375" x2="-1.375" y2="9.375" width="0.125" layer="14"/>
-<wire x1="-1.375" y1="9.375" x2="-6.5" y2="9.375" width="0.125" layer="14"/>
+<via x="-2.625" y="10" extent="1-16" drill="0.2"/>
+<wire x1="-2.625" y1="9.375" x2="-6.5" y2="9.375" width="0.125" layer="14"/>
 <wire x1="-6.5" y1="9.375" x2="-11" y2="4.875" width="0.125" layer="14"/>
 <wire x1="-11" y1="4.875" x2="-14.25" y2="4.875" width="0.125" layer="14"/>
 <wire x1="-14.25" y1="4.875" x2="-15" y2="5.625" width="0.125" layer="14"/>
@@ -1645,14 +1646,17 @@ Covered vias can be set in Masks (Limit).
 <wire x1="25.125" y1="9.25" x2="8.625" y2="9.25" width="0.125" layer="3"/>
 <wire x1="8.625" y1="9.25" x2="7.125" y2="10.75" width="0.125" layer="3"/>
 <wire x1="7.125" y1="10.75" x2="-0.375" y2="10.75" width="0.125" layer="3"/>
-<wire x1="-0.375" y1="10.75" x2="-0.625" y2="10.375" width="0.125" layer="3"/>
 <contactref element="R$3" pad="IN"/>
-<wire x1="-1.5" y1="8.425" x2="-1.5" y2="9.2125" width="0.125" layer="16"/>
-<wire x1="-1.5" y1="9.2125" x2="-0.625" y2="10.375" width="0.125" layer="16"/>
+<wire x1="-0.375" y1="10.75" x2="-0.375" y2="10.5" width="0.125" layer="3"/>
+<wire x1="-0.375" y1="10.5" x2="-1" y2="10" width="0.125" layer="3"/>
+<wire x1="-1" y1="10" x2="-2.625" y2="10" width="0.125" layer="3"/>
+<wire x1="-1.5" y1="8.425" x2="-1.5" y2="9" width="0.125" layer="16"/>
+<wire x1="-1.5" y1="9" x2="-2.625" y2="10" width="0.125" layer="16"/>
+<wire x1="-2.625" y1="9.375" x2="-2.625" y2="10" width="0.125" layer="14"/>
 </signal>
 <signal name="D$4">
 <contactref element="LP$3" pad="$4"/>
-<via x="0.125" y="10.375" extent="1-16" drill="0.2"/>
+<via x="0.375" y="10" extent="1-16" drill="0.2"/>
 <via x="-18.375" y="5.375" extent="1-16" drill="0.2"/>
 <wire x1="-18.375" y1="5.375" x2="-18.375" y2="4.5" width="0.125" layer="1"/>
 <wire x1="-18.375" y1="4.5" x2="-18.5" y2="3.76" width="0.125" layer="1"/>
@@ -1677,7 +1681,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="4.75" y1="9.5" x2="5.25" y2="10" width="0.125" layer="3"/>
 <wire x1="5.25" y1="10" x2="7.375" y2="10" width="0.125" layer="3"/>
 <contactref element="B$2" pad="LF"/>
-<wire x1="0.125" y1="10.375" x2="3.375" y2="10.375" width="0.125" layer="3"/>
 <wire x1="3.375" y1="10.375" x2="3.625" y2="10.375" width="0.125" layer="3"/>
 <wire x1="3.625" y1="10.375" x2="4.5" y2="9.5" width="0.125" layer="3"/>
 <wire x1="4.5" y1="9.5" x2="4.75" y2="9.5" width="0.125" layer="3"/>
@@ -1685,8 +1688,12 @@ Covered vias can be set in Masks (Limit).
 <wire x1="3.375" y1="8.15" x2="3.375" y2="9.875" width="0.125" layer="1"/>
 <via x="3.375" y="9.875" extent="1-16" drill="0.2"/>
 <wire x1="3.375" y1="9.875" x2="3.375" y2="10.375" width="0.125" layer="3"/>
-<wire x1="-1.125" y1="9" x2="0.125" y2="10.25" width="0.125" layer="14"/>
-<wire x1="0.125" y1="10.25" x2="0.125" y2="10.375" width="0.125" layer="14"/>
+<wire x1="-1.125" y1="9" x2="-1.125" y2="9.875" width="0.125" layer="14"/>
+<wire x1="-1.125" y1="9.875" x2="0.25" y2="9.875" width="0.125" layer="14"/>
+<wire x1="0.25" y1="9.875" x2="0.375" y2="10" width="0.125" layer="14"/>
+<wire x1="3.375" y1="9.875" x2="2.875" y2="10.375" width="0.125" layer="3"/>
+<wire x1="2.875" y1="10.375" x2="0.875" y2="10.375" width="0.125" layer="3"/>
+<wire x1="0.875" y1="10.375" x2="0.375" y2="10" width="0.125" layer="3"/>
 </signal>
 <signal name="D$5">
 <contactref element="LP$8" pad="$4"/>
@@ -1729,11 +1736,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-1.812546875" y1="4.5" x2="0" y2="4.5" width="0.3" layer="16"/>
 <wire x1="0" y1="4.5" x2="1.812546875" y2="4.5" width="0.3" layer="16"/>
 <wire x1="1.812546875" y1="4.5" x2="2.062546875" y2="4.179978125" width="0.3" layer="16"/>
-<wire x1="1.5" y1="6.7" x2="0.575" y2="6.7" width="0.3" layer="16"/>
-<wire x1="0.575" y1="6.7" x2="0" y2="6.125" width="0.3" layer="16"/>
-<wire x1="0" y1="6.125" x2="0" y2="4.5" width="0.3" layer="16"/>
-<wire x1="2.25" y1="9.625" x2="2.25" y2="7.125" width="0.125" layer="16"/>
-<wire x1="2.25" y1="7.125" x2="1.5" y2="6.7" width="0.125" layer="16"/>
+<wire x1="0.25" y1="7.2" x2="0" y2="7.08125" width="0.3" layer="16"/>
+<wire x1="0" y1="7.08125" x2="0" y2="4.5" width="0.3" layer="16"/>
+<wire x1="2.25" y1="9.625" x2="2.25" y2="7.2" width="0.125" layer="16"/>
+<wire x1="2.25" y1="7.2" x2="0.25" y2="7.2" width="0.125" layer="16"/>
 </signal>
 <signal name="D$6">
 <contactref element="LP$2" pad="$4"/>
@@ -1888,15 +1894,14 @@ Covered vias can be set in Masks (Limit).
 <wire x1="9.5" y1="-1.75" x2="9.375" y2="-1.875" width="0.125" layer="14"/>
 <wire x1="9.375" y1="-1.875" x2="9.375" y2="-5.5" width="0.125" layer="14"/>
 <wire x1="9.375" y1="-5.5" x2="6.125" y2="-8.75" width="0.125" layer="14"/>
-<wire x1="6.125" y1="-8.75" x2="2.25" y2="-8.75" width="0.125" layer="14"/>
-<wire x1="2.25" y1="-8.75" x2="1.375" y2="-9.625" width="0.125" layer="14"/>
-<wire x1="1.375" y1="-9.625" x2="1.375" y2="-10" width="0.125" layer="14"/>
-<wire x1="1.375" y1="-10" x2="1" y2="-10.375" width="0.125" layer="14"/>
-<wire x1="1" y1="-10.375" x2="-1" y2="-10.375" width="0.125" layer="14"/>
-<wire x1="-1" y1="-10.375" x2="-1.25" y2="-10.125" width="0.125" layer="14"/>
-<wire x1="-1.25" y1="-10.125" x2="-1.25" y2="-9.75" width="0.125" layer="14"/>
-<wire x1="-1.25" y1="-9.75" x2="-1.625" y2="-9.375" width="0.125" layer="14"/>
-<wire x1="-1.625" y1="-9.375" x2="-7.875" y2="-9.375" width="0.125" layer="14"/>
+<wire x1="6.125" y1="-8.75" x2="3.25" y2="-8.75" width="0.125" layer="14"/>
+<wire x1="3.25" y1="-8.75" x2="2.5" y2="-9.875" width="0.125" layer="14"/>
+<wire x1="2.5" y1="-9.875" x2="2.5" y2="-10.625" width="0.125" layer="14"/>
+<wire x1="2.5" y1="-10.625" x2="1.625" y2="-11.5" width="0.125" layer="14"/>
+<wire x1="1.625" y1="-11.5" x2="-1.875" y2="-11.5" width="0.125" layer="14"/>
+<wire x1="-1.875" y1="-11.5" x2="-1.875" y2="-9.75" width="0.125" layer="14"/>
+<wire x1="-1.875" y1="-9.75" x2="-2.25" y2="-9.375" width="0.125" layer="14"/>
+<wire x1="-2.25" y1="-9.375" x2="-7.875" y2="-9.375" width="0.125" layer="14"/>
 <wire x1="-7.875" y1="-9.375" x2="-9.25" y2="-8" width="0.125" layer="14"/>
 <wire x1="-9.25" y1="-8" x2="-11.125" y2="-8" width="0.125" layer="14"/>
 <wire x1="-11.125" y1="-8" x2="-11.625" y2="-8.625" width="0.125" layer="14"/>
@@ -1928,7 +1933,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="10.5" y1="-2.5" x2="11.125" y2="-3.125" width="0.125" layer="14"/>
 <wire x1="11.125" y1="-3.125" x2="11.125" y2="-8.375" width="0.125" layer="14"/>
 <wire x1="11.125" y1="-8.375" x2="7.5" y2="-12.125" width="0.125" layer="14"/>
-<wire x1="7.5" y1="-12.125" x2="-8.875" y2="-12" width="0.125" layer="14"/>
+<wire x1="7.5" y1="-12.125" x2="3.375" y2="-12.125" width="0.125" layer="14"/>
+<wire x1="3.375" y1="-12.125" x2="2.5" y2="-13" width="0.125" layer="14"/>
+<wire x1="2.5" y1="-13" x2="-4.125" y2="-13" width="0.125" layer="14"/>
+<wire x1="-4.125" y1="-13" x2="-5.125" y2="-12" width="0.125" layer="14"/>
+<wire x1="-5.125" y1="-12" x2="-8.875" y2="-12" width="0.125" layer="14"/>
 <wire x1="-8.875" y1="-12" x2="-9.75" y2="-11.125" width="0.125" layer="14"/>
 <wire x1="-9.75" y1="-11.125" x2="-16.625" y2="-11.125" width="0.125" layer="14"/>
 <wire x1="-16.625" y1="-11.125" x2="-18.75" y2="-9" width="0.125" layer="14"/>
@@ -1957,7 +1966,11 @@ Covered vias can be set in Masks (Limit).
 <via x="10.5" y="-3.5" extent="1-16" drill="0.2"/>
 <wire x1="10.5" y1="-3.5" x2="10.5" y2="-6.25" width="0.125" layer="14"/>
 <wire x1="10.5" y1="-6.25" x2="5.125" y2="-11.625" width="0.125" layer="14"/>
-<wire x1="5.125" y1="-11.625" x2="-8.75" y2="-11.625" width="0.125" layer="14"/>
+<wire x1="5.125" y1="-11.625" x2="3.375" y2="-11.625" width="0.125" layer="14"/>
+<wire x1="3.375" y1="-11.625" x2="2.375" y2="-12.625" width="0.125" layer="14"/>
+<wire x1="2.375" y1="-12.625" x2="-4" y2="-12.625" width="0.125" layer="14"/>
+<wire x1="-4" y1="-12.625" x2="-5" y2="-11.625" width="0.125" layer="14"/>
+<wire x1="-5" y1="-11.625" x2="-8.75" y2="-11.625" width="0.125" layer="14"/>
 <wire x1="-8.75" y1="-11.625" x2="-9.625" y2="-10.75" width="0.125" layer="14"/>
 <wire x1="-9.625" y1="-10.75" x2="-15.875" y2="-10.75" width="0.125" layer="14"/>
 <wire x1="-15.875" y1="-10.75" x2="-18" y2="-8.625" width="0.125" layer="14"/>
@@ -1989,7 +2002,10 @@ Covered vias can be set in Masks (Limit).
 <via x="4.5" y="-9.875" extent="1-16" drill="0.2"/>
 <wire x1="4.5" y1="-9.875" x2="4.5" y2="-10" width="0.125" layer="14"/>
 <wire x1="4.5" y1="-10" x2="3.25" y2="-11.25" width="0.125" layer="14"/>
-<wire x1="3.25" y1="-11.25" x2="-8.625" y2="-11.25" width="0.125" layer="14"/>
+<wire x1="3.25" y1="-11.25" x2="2.25" y2="-12.25" width="0.125" layer="14"/>
+<wire x1="2.25" y1="-12.25" x2="-3.75" y2="-12.25" width="0.125" layer="14"/>
+<wire x1="-3.75" y1="-12.25" x2="-4.75" y2="-11.25" width="0.125" layer="14"/>
+<wire x1="-4.75" y1="-11.25" x2="-8.625" y2="-11.25" width="0.125" layer="14"/>
 <wire x1="-8.625" y1="-11.25" x2="-9.5" y2="-10.375" width="0.125" layer="14"/>
 <wire x1="-9.5" y1="-10.375" x2="-14.75" y2="-10.375" width="0.125" layer="14"/>
 <wire x1="-14.75" y1="-10.375" x2="-17" y2="-8.25" width="0.125" layer="14"/>
@@ -2017,9 +2033,11 @@ Covered vias can be set in Masks (Limit).
 <signal name="D$14">
 <contactref element="LP$13" pad="$4"/>
 <via x="3.25" y="-10.25" extent="1-16" drill="0.2"/>
-<wire x1="3.25" y1="-10.25" x2="1.875" y2="-10.25" width="0.125" layer="14"/>
-<wire x1="1.875" y1="-10.25" x2="1.25" y2="-10.875" width="0.125" layer="14"/>
-<wire x1="1.25" y1="-10.875" x2="-8.5" y2="-10.875" width="0.125" layer="14"/>
+<wire x1="3.25" y1="-10.25" x2="3.25" y2="-10.75" width="0.125" layer="14"/>
+<wire x1="3.25" y1="-10.75" x2="2.125" y2="-11.875" width="0.125" layer="14"/>
+<wire x1="2.125" y1="-11.875" x2="-3.5" y2="-11.875" width="0.125" layer="14"/>
+<wire x1="-3.5" y1="-11.875" x2="-4.5" y2="-10.875" width="0.125" layer="14"/>
+<wire x1="-4.5" y1="-10.875" x2="-8.5" y2="-10.875" width="0.125" layer="14"/>
 <wire x1="-8.5" y1="-10.875" x2="-9.375" y2="-10" width="0.125" layer="14"/>
 <wire x1="-9.375" y1="-10" x2="-14.25" y2="-10" width="0.125" layer="14"/>
 <wire x1="-14.25" y1="-10" x2="-17.125" y2="-7.125" width="0.125" layer="14"/>
@@ -2049,9 +2067,12 @@ Covered vias can be set in Masks (Limit).
 </signal>
 <signal name="D$15">
 <contactref element="LP$4" pad="$4"/>
-<via x="0.75" y="-9.875" extent="1-16" drill="0.2"/>
-<wire x1="0.75" y1="-9.875" x2="-0.5" y2="-8.625" width="0.125" layer="14"/>
-<wire x1="-0.5" y1="-8.625" x2="-7.375" y2="-8.625" width="0.125" layer="14"/>
+<via x="0.125" y="-10.625" extent="1-16" drill="0.2"/>
+<wire x1="0.125" y1="-10.625" x2="0" y2="-10.625" width="0.125" layer="14"/>
+<wire x1="0" y1="-10.625" x2="-0.5" y2="-10.125" width="0.125" layer="14"/>
+<wire x1="-0.5" y1="-10.125" x2="-1.125" y2="-10.125" width="0.125" layer="14"/>
+<wire x1="-1.125" y1="-10.125" x2="-1.125" y2="-8.625" width="0.125" layer="14"/>
+<wire x1="-1.125" y1="-8.625" x2="-7.375" y2="-8.625" width="0.125" layer="14"/>
 <wire x1="-7.375" y1="-8.625" x2="-7.375" y2="-8.125" width="0.125" layer="14"/>
 <wire x1="-7.375" y1="-8.125" x2="-9.875" y2="-5.625" width="0.125" layer="14"/>
 <wire x1="-9.875" y1="-5.625" x2="-10.375" y2="-5.625" width="0.125" layer="14"/>
@@ -2068,7 +2089,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="25.625" y1="-9.25" x2="7.75" y2="-9.25" width="0.125" layer="3"/>
 <wire x1="7.75" y1="-9.25" x2="6.25" y2="-10.75" width="0.125" layer="3"/>
 <wire x1="6.25" y1="-10.75" x2="1.625" y2="-10.75" width="0.125" layer="3"/>
-<wire x1="1.625" y1="-10.75" x2="0.75" y2="-9.875" width="0.125" layer="3"/>
+<wire x1="1.625" y1="-10.75" x2="0.125" y2="-10.625" width="0.125" layer="3"/>
 <wire x1="-15" y1="-4" x2="-20.75" y2="-4" width="0.125" layer="14"/>
 <wire x1="-20.75" y1="-4" x2="-20.75" y2="-1.125" width="0.125" layer="14"/>
 <via x="-20.75" y="-1.125" extent="1-16" drill="0.2"/>
@@ -2084,18 +2105,20 @@ Covered vias can be set in Masks (Limit).
 <wire x1="0" y1="-4.5" x2="1.625" y2="-4.5" width="0.3" layer="16"/>
 <wire x1="1.625" y1="-4.5" x2="1.945021875" y2="-4.179978125" width="0.3" layer="16"/>
 <wire x1="1.945021875" y1="-4.179978125" x2="2.062546875" y2="-4.179978125" width="0.3" layer="16"/>
-<wire x1="1.5" y1="-6.7" x2="0.75" y2="-7.45" width="0.125" layer="16"/>
-<wire x1="0.75" y1="-7.45" x2="0.75" y2="-9.875" width="0.125" layer="16"/>
-<wire x1="1.5" y1="-6.7" x2="0.575" y2="-6.7" width="0.3" layer="16"/>
-<wire x1="0.575" y1="-6.7" x2="0" y2="-6.125" width="0.3" layer="16"/>
-<wire x1="0" y1="-6.125" x2="0" y2="-4.5" width="0.3" layer="16"/>
+<wire x1="0.25" y1="-7.2" x2="0.5" y2="-7.2" width="0.125" layer="16"/>
+<wire x1="0.5" y1="-7.2" x2="1" y2="-7.5" width="0.125" layer="16"/>
+<wire x1="1" y1="-7.5" x2="1" y2="-9.5" width="0.125" layer="16"/>
+<wire x1="1" y1="-9.5" x2="0.75" y2="-9.75" width="0.125" layer="16"/>
+<wire x1="0.75" y1="-9.75" x2="0.125" y2="-10.625" width="0.125" layer="16"/>
+<wire x1="0.25" y1="-7.2" x2="0" y2="-6.75" width="0.3" layer="16"/>
+<wire x1="0" y1="-6.75" x2="0" y2="-4.5" width="0.3" layer="16"/>
 </signal>
 <signal name="D$16">
 <contactref element="LP$12" pad="$4"/>
-<via x="-0.75" y="-9.875" extent="1-16" drill="0.2"/>
-<wire x1="-0.75" y1="-9.875" x2="-0.75" y2="-9.25" width="0.125" layer="14"/>
-<wire x1="-0.75" y1="-9.25" x2="-1" y2="-9" width="0.125" layer="14"/>
-<wire x1="-1" y1="-9" x2="-7.625" y2="-9" width="0.125" layer="14"/>
+<via x="-0.75" y="-10.625" extent="1-16" drill="0.2"/>
+<wire x1="-0.75" y1="-10.625" x2="-1.125" y2="-10.625" width="0.125" layer="14"/>
+<wire x1="-1.125" y1="-10.625" x2="-1.5" y2="-10.25" width="0.125" layer="14"/>
+<wire x1="-1.5" y1="-9" x2="-7.625" y2="-9" width="0.125" layer="14"/>
 <wire x1="-7.625" y1="-9" x2="-8.75" y2="-7.875" width="0.125" layer="14"/>
 <wire x1="-8.75" y1="-7.875" x2="-11.125" y2="-5.5" width="0.125" layer="14"/>
 <wire x1="-11.125" y1="-5.5" x2="-14.125" y2="-5.5" width="0.125" layer="14"/>
@@ -2119,20 +2142,24 @@ Covered vias can be set in Masks (Limit).
 <wire x1="26" y1="-9.75" x2="7.875" y2="-9.75" width="0.125" layer="3"/>
 <wire x1="7.875" y1="-9.75" x2="6.5" y2="-11.125" width="0.125" layer="3"/>
 <wire x1="6.5" y1="-11.125" x2="0.5" y2="-11.125" width="0.125" layer="3"/>
-<wire x1="0.5" y1="-11.125" x2="-0.75" y2="-9.875" width="0.125" layer="3"/>
+<wire x1="0.5" y1="-11.125" x2="-0.75" y2="-10.625" width="0.125" layer="3"/>
 <wire x1="-16.375" y1="-5.625" x2="-15.875" y2="-6.125" width="0.125" layer="1"/>
 <wire x1="-15.875" y1="-6.125" x2="-15.125" y2="-6.125" width="0.125" layer="1"/>
 <wire x1="-15.125" y1="-6.125" x2="-15" y2="-6.25" width="0.125" layer="1"/>
 <contactref element="B$5" pad="LF"/>
-<wire x1="-3.35" y1="-8.125" x2="-3.6" y2="-7.875" width="0.125" layer="1"/>
-<wire x1="-3.6" y1="-7.875" x2="-8.75" y2="-7.875" width="0.125" layer="1"/>
+<wire x1="-3.35" y1="-8.125" x2="-3.6" y2="-7.375" width="0.125" layer="1"/>
+<wire x1="-3.6" y1="-7.375" x2="-6.75" y2="-7.375" width="0.125" layer="1"/>
+<wire x1="-6.75" y1="-7.375" x2="-6.75" y2="-7.875" width="0.125" layer="1"/>
+<wire x1="-6.75" y1="-7.875" x2="-8.75" y2="-7.875" width="0.125" layer="1"/>
 <via x="-8.75" y="-7.875" extent="1-16" drill="0.2"/>
+<wire x1="-1.5" y1="-9" x2="-1.5" y2="-10.25" width="0.125" layer="14"/>
 </signal>
 <signal name="D$17">
 <contactref element="LP$11" pad="$4"/>
-<via x="-2.625" y="-10.5" extent="1-16" drill="0.2"/>
-<wire x1="-2.625" y1="-10.5" x2="-2.5" y2="-10.5" width="0.125" layer="14"/>
-<wire x1="-2.625" y1="-10.5" x2="-8.25" y2="-10.5" width="0.125" layer="14"/>
+<via x="-2.5" y="-10" extent="1-16" drill="0.2"/>
+<wire x1="-2.5" y1="-10" x2="-2.5" y2="-10.125" width="0.125" layer="14"/>
+<wire x1="-2.5" y1="-10.125" x2="-2.875" y2="-10.5" width="0.125" layer="14"/>
+<wire x1="-2.875" y1="-10.5" x2="-8.25" y2="-10.5" width="0.125" layer="14"/>
 <wire x1="-8.25" y1="-10.5" x2="-9.125" y2="-9.625" width="0.125" layer="14"/>
 <wire x1="-9.125" y1="-9.625" x2="-11.75" y2="-9.625" width="0.125" layer="14"/>
 <wire x1="-11.75" y1="-9.625" x2="-12.375" y2="-9" width="0.125" layer="14"/>
@@ -2153,9 +2180,9 @@ Covered vias can be set in Masks (Limit).
 <wire x1="6.75" y1="-11.5" x2="-0.5" y2="-11.5" width="0.125" layer="3"/>
 <contactref element="R$29" pad="IN"/>
 <wire x1="-0.5" y1="-11.5" x2="-1.5" y2="-10.5" width="0.125" layer="3"/>
-<wire x1="-1.5" y1="-10.5" x2="-2.625" y2="-10.5" width="0.125" layer="3"/>
-<wire x1="-1.5" y1="-8.425" x2="-1.5" y2="-10.5" width="0.125" layer="16"/>
-<wire x1="-1.5" y1="-10.5" x2="-2.625" y2="-10.5" width="0.125" layer="16"/>
+<wire x1="-1.5" y1="-10.5" x2="-2.5" y2="-10" width="0.125" layer="3"/>
+<wire x1="-1.5" y1="-8.425" x2="-1.5" y2="-9.125" width="0.125" layer="16"/>
+<wire x1="-1.5" y1="-9.125" x2="-2.5" y2="-10" width="0.125" layer="16"/>
 </signal>
 <signal name="D$18">
 <contactref element="LP$19" pad="$4"/>
@@ -2863,7 +2890,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-3.89155" y1="-3.91079375" x2="-2.96875" y2="-3.1375" width="0.5" layer="16"/>
 <wire x1="-2.96875" y1="-3.1375" x2="-2.96875" y2="-3.222425" width="0.5" layer="16"/>
 <wire x1="-2.96875" y1="-3.222425" x2="-2.86603125" y2="-3.222425" width="0.5" layer="16"/>
-<wire x1="-3.89155" y1="-3.91079375" x2="-3.8" y2="-3.8" width="0" layer="19" extent="1-16"/>
+<via x="-3.86" y="-3.88375" extent="1-16" drill="0.2"/>
+<via x="-4.20625" y="-4.17375" extent="1-16" drill="0.2"/>
+<wire x1="-3.86" y1="-3.88375" x2="-3.8" y2="-3.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.89155" y1="-3.91079375" x2="-3.86" y2="-3.88375" width="0" layer="19" extent="16-16"/>
+<wire x1="-4.20625" y1="-4.17375" x2="-3.89155" y2="-3.91079375" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$10" class="1">
 <contactref element="L$1" pad="OUT"/>
@@ -2872,7 +2903,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-3.89405" y1="3.91079375" x2="-3.00625" y2="3.1625" width="0.5" layer="16"/>
 <wire x1="-3.00625" y1="3.1625" x2="-3.00625" y2="3.222425" width="0.5" layer="16"/>
 <wire x1="-3.00625" y1="3.222425" x2="-2.86603125" y2="3.222425" width="0.5" layer="16"/>
-<wire x1="-3.89405" y1="3.91079375" x2="-3.8" y2="3.8" width="0" layer="19" extent="1-16"/>
+<via x="-3.86625" y="3.89" extent="1-16" drill="0.2"/>
+<via x="-4.2125" y="4.18" extent="1-16" drill="0.2"/>
+<wire x1="-3.86625" y1="3.89" x2="-3.8" y2="3.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.89405" y1="3.91079375" x2="-3.86625" y2="3.89" width="0" layer="19" extent="16-16"/>
+<wire x1="-4.2125" y1="4.18" x2="-3.89405" y2="3.91079375" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$11" class="1">
 <contactref element="L$2" pad="OUT"/>
@@ -2881,7 +2916,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="3.89155" y1="3.91079375" x2="3.04375" y2="3.2" width="0.5" layer="16"/>
 <wire x1="3.04375" y1="3.2" x2="3.04375" y2="3.222425" width="0.5" layer="16"/>
 <wire x1="3.04375" y1="3.222425" x2="2.86603125" y2="3.222425" width="0.5" layer="16"/>
-<wire x1="3.89155" y1="3.91079375" x2="3.8" y2="3.8" width="0" layer="19" extent="1-16"/>
+<via x="4.2125" y="4.18" extent="1-16" drill="0.2"/>
+<via x="3.8725" y="3.89" extent="1-16" drill="0.2"/>
+<wire x1="3.8725" y1="3.89" x2="3.8" y2="3.8" width="0" layer="19" extent="1-1"/>
+<wire x1="3.89155" y1="3.91079375" x2="3.8725" y2="3.89" width="0" layer="19" extent="16-16"/>
+<wire x1="4.2125" y1="4.18" x2="3.89155" y2="3.91079375" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$13" class="1">
 <contactref element="L$3" pad="IN"/>
@@ -2890,7 +2929,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="10.25" y1="-6.75" x2="7" y2="-6.75" width="0.3" layer="16"/>
 <wire x1="7" y1="-6.75" x2="5.92156875" y2="-5.61418125" width="0.3" layer="16"/>
 <wire x1="7" y1="-6.75" x2="7.375" y2="-6.75" width="0.125" layer="16"/>
-<wire x1="7.375" y1="-6.75" x2="7.375" y2="-7.45" width="0.125" layer="16"/>
+<wire x1="7.375" y1="-6.75" x2="7.36875" y2="-7.38125" width="0.125" layer="16"/>
 </signal>
 <signal name="N$14" class="1">
 <contactref element="L$2" pad="IN"/>
@@ -2899,7 +2938,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="10.25" y1="6.75" x2="7.25" y2="6.75" width="0.3" layer="16"/>
 <wire x1="7.0573875" y1="6.75" x2="5.92156875" y2="5.61418125" width="0.3" layer="16"/>
 <wire x1="7.0573875" y1="6.75" x2="7.25" y2="6.75" width="0.3" layer="16"/>
-<wire x1="7.375" y1="7.45" x2="7.375" y2="6.875" width="0.3" layer="16"/>
+<wire x1="7.4125" y1="7.3875" x2="7.375" y2="6.875" width="0.3" layer="16"/>
 <wire x1="7.375" y1="6.875" x2="7.25" y2="6.75" width="0.3" layer="16"/>
 </signal>
 <signal name="RF$3" class="1">
@@ -2909,11 +2948,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="10.25" y1="-10.25" x2="8.375" y2="-10.25" width="0.3" layer="16"/>
 <wire x1="8.375" y1="-10.25" x2="7" y2="-11.625" width="0.3" layer="16"/>
 <wire x1="7" y1="-11.625" x2="-4.625" y2="-11.625" width="0.3" layer="16"/>
-<wire x1="-4.625" y1="-11.625" x2="-7.25" y2="-9.375" width="0.3" layer="16"/>
-<wire x1="-7.25" y1="-9.375" x2="-7.25" y2="-8.125" width="0.3" layer="16"/>
+<wire x1="-4.625" y1="-11.625" x2="-7.25" y2="-9" width="0.3" layer="16"/>
+<wire x1="-7.25" y1="-9" x2="-7.25" y2="-8.125" width="0.3" layer="16"/>
 <wire x1="-7.25" y1="-8.125" x2="-7.25" y2="-6.8176125" width="0.3" layer="16"/>
 <wire x1="-7.25" y1="-6.8176125" x2="-5.92156875" y2="-5.61418125" width="0.3" layer="16"/>
-<wire x1="-6.55" y1="-8.125" x2="-7.25" y2="-8.125" width="0.125" layer="16"/>
+<wire x1="-6.55" y1="-8.75" x2="-7.25" y2="-8.125" width="0.125" layer="16"/>
 </signal>
 <signal name="RF$4" class="1">
 <contactref element="L$1" pad="IN"/>
@@ -2926,7 +2965,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="-7.25" y1="9" x2="-7.25" y2="8.125" width="0.3" layer="16"/>
 <wire x1="-7.25" y1="8.125" x2="-7.25" y2="6.9401125" width="0.3" layer="16"/>
 <wire x1="-7.25" y1="6.9401125" x2="-5.92406875" y2="5.61418125" width="0.3" layer="16"/>
-<wire x1="-6.55" y1="8.125" x2="-7.25" y2="8.125" width="0.3" layer="16"/>
+<wire x1="-6.55" y1="8.625" x2="-7.25" y2="8.125" width="0.3" layer="16"/>
 </signal>
 <signal name="N$16" class="2">
 <contactref element="B$5" pad="HF"/>
@@ -3039,7 +3078,7 @@ Covered vias can be set in Masks (Limit).
 <vertex x="47.5" y="-31.85"/>
 <vertex x="-53.8" y="-31.75"/>
 </polygon>
-<polygon width="0.15" layer="16" rank="6">
+<polygon width="0.25" layer="16" rank="6">
 <vertex x="-55.05" y="31.3"/>
 <vertex x="48.25" y="31.2"/>
 <vertex x="48.25" y="-33.85"/>
@@ -3285,19 +3324,19 @@ Covered vias can be set in Masks (Limit).
 <via x="-34.375" y="-7.25" extent="1-16" drill="0.4"/>
 <via x="-34.375" y="-8.125" extent="1-16" drill="0.4"/>
 <via x="-34.375" y="-9" extent="1-16" drill="0.4"/>
-<via x="3.5" y="19.375" extent="1-16" drill="0.4"/>
-<via x="4.875" y="19.375" extent="1-16" drill="0.4"/>
-<via x="2.125" y="19.375" extent="1-16" drill="0.4"/>
-<via x="0.75" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-0.625" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-2" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-3.375" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-4.75" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-6.125" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-7.5" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-8.875" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-10.25" y="19.375" extent="1-16" drill="0.4"/>
-<via x="-11.625" y="19.375" extent="1-16" drill="0.4"/>
+<via x="3.5" y="19.075" extent="1-16" drill="0.4"/>
+<via x="4.875" y="19.075" extent="1-16" drill="0.4"/>
+<via x="2.125" y="19.075" extent="1-16" drill="0.4"/>
+<via x="0.75" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-0.625" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-2" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-3.375" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-4.75" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-6.125" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-7.5" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-8.875" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-10.25" y="19.075" extent="1-16" drill="0.4"/>
+<via x="-11.625" y="19.075" extent="1-16" drill="0.4"/>
 <via x="-13" y="14.875" extent="1-16" drill="0.4"/>
 <via x="-14.375" y="14.875" extent="1-16" drill="0.4"/>
 <via x="-15.75" y="14.875" extent="1-16" drill="0.4"/>
@@ -3310,22 +3349,22 @@ Covered vias can be set in Masks (Limit).
 <via x="-25.375" y="14.875" extent="1-16" drill="0.4"/>
 <via x="-26.75" y="14.875" extent="1-16" drill="0.4"/>
 <via x="-28.125" y="14.875" extent="1-16" drill="0.4"/>
-<via x="6.25" y="19.375" extent="1-16" drill="0.4"/>
-<via x="7.625" y="19.375" extent="1-16" drill="0.4"/>
-<via x="9" y="19.375" extent="1-16" drill="0.4"/>
-<via x="10.375" y="19.375" extent="1-16" drill="0.4"/>
-<via x="11.75" y="19.375" extent="1-16" drill="0.4"/>
-<via x="13.125" y="19.375" extent="1-16" drill="0.4"/>
-<via x="14.5" y="19.375" extent="1-16" drill="0.4"/>
-<via x="15.875" y="19.375" extent="1-16" drill="0.4"/>
-<via x="17.25" y="19.375" extent="1-16" drill="0.4"/>
-<via x="18.625" y="19.375" extent="1-16" drill="0.4"/>
-<via x="20" y="19.375" extent="1-16" drill="0.4"/>
-<via x="21.375" y="19.375" extent="1-16" drill="0.4"/>
-<via x="22.75" y="19.375" extent="1-16" drill="0.4"/>
-<via x="24.125" y="19.375" extent="1-16" drill="0.4"/>
-<via x="25.5" y="19.375" extent="1-16" drill="0.4"/>
-<via x="27" y="19.375" extent="1-16" drill="0.4"/>
+<via x="6.25" y="19.075" extent="1-16" drill="0.4"/>
+<via x="7.625" y="19.075" extent="1-16" drill="0.4"/>
+<via x="9" y="19.075" extent="1-16" drill="0.4"/>
+<via x="10.375" y="19.075" extent="1-16" drill="0.4"/>
+<via x="11.75" y="19.075" extent="1-16" drill="0.4"/>
+<via x="13.125" y="19.075" extent="1-16" drill="0.4"/>
+<via x="14.5" y="19.075" extent="1-16" drill="0.4"/>
+<via x="15.875" y="19.075" extent="1-16" drill="0.4"/>
+<via x="17.25" y="19.075" extent="1-16" drill="0.4"/>
+<via x="18.625" y="19.075" extent="1-16" drill="0.4"/>
+<via x="20" y="19.075" extent="1-16" drill="0.4"/>
+<via x="21.375" y="19.075" extent="1-16" drill="0.4"/>
+<via x="22.75" y="19.075" extent="1-16" drill="0.4"/>
+<via x="24.125" y="19.075" extent="1-16" drill="0.4"/>
+<via x="25.5" y="19.075" extent="1-16" drill="0.4"/>
+<via x="27" y="19.075" extent="1-16" drill="0.4"/>
 <via x="-12.875" y="11.875" extent="1-16" drill="0.4"/>
 <via x="-13.625" y="11.875" extent="1-16" drill="0.4"/>
 <via x="-14.375" y="11.875" extent="1-16" drill="0.4"/>
@@ -3367,34 +3406,34 @@ Covered vias can be set in Masks (Limit).
 <via x="-12.25" y="-11.875" extent="1-16" drill="0.4"/>
 <via x="-11.5" y="-11.875" extent="1-16" drill="0.4"/>
 <via x="-10.75" y="-11.875" extent="1-16" drill="0.4"/>
-<via x="-28.125" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-26.75" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-25.375" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-24" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-22.625" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-21.25" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-19.875" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-18.5" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-17.125" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-15.75" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-14.375" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-13" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-11.625" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-10.25" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-8.875" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-7.5" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-6.125" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-4.75" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-3.375" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-2" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="-0.625" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="0.75" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="2.125" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="3.5" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="4.875" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="6.25" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="7.625" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="9" y="-19.375" extent="1-16" drill="0.4"/>
+<via x="-28.125" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-26.75" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-25.375" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-24" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-22.625" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-21.25" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-19.875" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-18.5" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-17.125" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-15.75" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-14.375" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-13" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-11.625" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-10.25" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-8.875" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-7.5" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-6.125" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-4.75" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-3.375" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-2" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="-0.625" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="0.75" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="2.125" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="3.5" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="4.875" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="6.25" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="7.625" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="9" y="-19.075" extent="1-16" drill="0.4"/>
 <via x="10.375" y="-14.875" extent="1-16" drill="0.4"/>
 <via x="11.75" y="-14.875" extent="1-16" drill="0.4"/>
 <via x="13.125" y="-14.875" extent="1-16" drill="0.4"/>
@@ -3424,22 +3463,21 @@ Covered vias can be set in Masks (Limit).
 <via x="-9.875" y="9.25" extent="1-16" drill="0.2"/>
 <via x="-16.125" y="7" extent="1-16" drill="0.2"/>
 <via x="-10.375" y="7.375" extent="1-16" drill="0.2"/>
-<via x="-9.875" y="4.5" extent="1-16" drill="0.2"/>
 <via x="-16.125" y="4.625" extent="1-16" drill="0.2"/>
 <via x="-15.75" y="-7.5" extent="1-16" drill="0.2"/>
-<via x="-15.625" y="-10.25" extent="1-16" drill="0.2"/>
+<via x="-16.375" y="-9.5" extent="1-16" drill="0.2"/>
 <via x="-10.125" y="-7.25" extent="1-16" drill="0.2"/>
 <via x="-10.125" y="-4.75" extent="1-16" drill="0.2"/>
-<via x="28.5" y="19.375" extent="1-16" drill="0.4"/>
-<via x="30" y="19.375" extent="1-16" drill="0.4"/>
-<via x="30" y="18.125" extent="1-16" drill="0.4"/>
-<via x="30" y="16.75" extent="1-16" drill="0.4"/>
-<via x="30" y="15.5" extent="1-16" drill="0.4"/>
+<via x="28.5" y="19.075" extent="1-16" drill="0.4"/>
+<via x="30" y="19.075" extent="1-16" drill="0.4"/>
+<via x="30" y="17.825" extent="1-16" drill="0.4"/>
+<via x="30" y="16.45" extent="1-16" drill="0.4"/>
+<via x="30" y="15.2" extent="1-16" drill="0.4"/>
 <via x="28.25" y="-14.875" extent="1-16" drill="0.4"/>
-<via x="29.625" y="-19.375" extent="1-16" drill="0.4"/>
-<via x="29.625" y="-18.125" extent="1-16" drill="0.4"/>
-<via x="29.625" y="-16.875" extent="1-16" drill="0.4"/>
-<via x="29.625" y="-15.5" extent="1-16" drill="0.4"/>
+<via x="29.625" y="-19.075" extent="1-16" drill="0.4"/>
+<via x="29.625" y="-17.825" extent="1-16" drill="0.4"/>
+<via x="29.625" y="-16.575" extent="1-16" drill="0.4"/>
+<via x="29.625" y="-15.2" extent="1-16" drill="0.4"/>
 <via x="-33.9" y="14.7" extent="1-16" drill="2.1" diameter="4"/>
 <via x="-33.9" y="-14.7" extent="1-16" drill="2.1" diameter="4"/>
 <via x="8" y="16.5" extent="1-16" drill="0.2"/>
@@ -3523,20 +3561,39 @@ Covered vias can be set in Masks (Limit).
 <contactref element="U$6" pad="GND$6"/>
 <contactref element="U$6" pad="GND$5"/>
 <contactref element="U$6" pad="GND$2"/>
-<wire x1="7.25" y1="9.4575" x2="7.375" y2="9.05" width="0" layer="19" extent="1-16"/>
-<wire x1="-10.4" y1="5.01" x2="-10.4" y2="5.01" width="0" layer="19" extent="1-16"/>
-<wire x1="-16.15" y1="-9.74" x2="-16.15" y2="-9.74" width="0" layer="19" extent="1-16"/>
-<wire x1="7.375" y1="-9.05" x2="7.25" y2="-9.4575" width="0" layer="19" extent="1-16"/>
-<wire x1="-4.95" y1="-8.125" x2="-7.25" y2="-9.4575" width="0" layer="19" extent="1-16"/>
-<wire x1="-4.95" y1="8.125" x2="-7.25" y2="9.4575" width="0" layer="19" extent="1-16"/>
-<wire x1="-1.375" y1="4.375" x2="-4.95" y2="8.125" width="0" layer="19" extent="1-16"/>
-<wire x1="0" y1="5.75" x2="-1.375" y2="4.375" width="0" layer="19" extent="1-1"/>
-<wire x1="1.375" y1="4.375" x2="0" y2="5.75" width="0" layer="19" extent="1-1"/>
-<wire x1="1.5" y1="8.3" x2="0" y2="5.75" width="0" layer="19" extent="1-16"/>
-<wire x1="-1.375" y1="-4.375" x2="-4.95" y2="-8.125" width="0" layer="19" extent="1-16"/>
-<wire x1="0" y1="-5.75" x2="-1.375" y2="-4.375" width="0" layer="19" extent="1-1"/>
-<wire x1="1.375" y1="-4.375" x2="0" y2="-5.75" width="0" layer="19" extent="1-1"/>
-<wire x1="1.5" y1="-8.3" x2="0" y2="-5.75" width="0" layer="19" extent="1-16"/>
+<wire x1="-1.375" y1="4.375" x2="0" y2="4.375" width="0.3" layer="1"/>
+<wire x1="0" y1="4.375" x2="1.375" y2="4.375" width="0.3" layer="1"/>
+<wire x1="0" y1="5.75" x2="0" y2="4.375" width="0.3" layer="1"/>
+<wire x1="-1.375" y1="-4.375" x2="0" y2="-4.375" width="0.3" layer="1"/>
+<wire x1="0" y1="-4.375" x2="1.375" y2="-4.375" width="0.3" layer="1"/>
+<wire x1="0" y1="-5.75" x2="0" y2="-4.375" width="0.3" layer="1"/>
+<via x="-0.65625" y="-9.2875" extent="1-16" drill="0.2"/>
+<via x="-0.16875" y="-8.80625" extent="1-16" drill="0.2"/>
+<via x="-0.65" y="-8.80625" extent="1-16" drill="0.2"/>
+<via x="0.35" y="-8.80625" extent="1-16" drill="0.2"/>
+<via x="0.10625" y="-9.74375" extent="1-16" drill="0.2"/>
+<via x="-0.1625" y="-9.2875" extent="1-16" drill="0.2"/>
+<via x="-0.625" y="9.375" extent="1-16" drill="0.2"/>
+<via x="-0.19375" y="9.3625" extent="1-16" drill="0.2"/>
+<via x="0.275" y="9.375" extent="1-16" drill="0.2"/>
+<via x="0.75" y="9.375" extent="1-16" drill="0.2"/>
+<via x="0.75" y="8.875" extent="1-16" drill="0.2"/>
+<via x="0.3" y="8.875" extent="1-16" drill="0.2"/>
+<via x="-0.1625" y="8.86875" extent="1-16" drill="0.2"/>
+<via x="-0.625" y="8.875" extent="1-16" drill="0.2"/>
+<via x="-28.2" y="17.5" extent="1-16" drill="3"/>
+<via x="-14.1" y="17.5" extent="1-16" drill="2.1"/>
+<via x="11.925" y="-17.5" extent="1-16" drill="3"/>
+<via x="26.025" y="-17.5" extent="1-16" drill="2.1"/>
+<via x="-10" y="3.875" extent="1-16" drill="0.2"/>
+<via x="-10.5" y="3.875" extent="1-16" drill="0.2"/>
+<via x="-11" y="3.875" extent="1-16" drill="0.2"/>
+<wire x1="25.5" y1="-14.875" x2="26.025" y2="-17.5" width="0" layer="19" extent="1-1"/>
+<wire x1="7.36875" y1="-8.98125" x2="7.25" y2="-9.4575" width="0" layer="19" extent="1-16"/>
+<wire x1="-14.1" y1="17.5" x2="-14.375" y2="14.875" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="5.75" x2="0.25" y2="8.8" width="0" layer="19" extent="1-16"/>
+<via x="0.36875" y="-9.28125" extent="1-16" drill="0.2"/>
+<via x="-0.41875" y="-9.675" extent="1-16" drill="0.2"/>
 </signal>
 <signal name="N$18" class="2">
 <contactref element="B$3" pad="HF"/>
@@ -3550,7 +3607,11 @@ Covered vias can be set in Masks (Limit).
 <wire x1="3.89155" y1="-3.91079375" x2="2.98125" y2="-3.14375" width="0.5" layer="16"/>
 <wire x1="2.98125" y1="-3.14375" x2="2.98125" y2="-3.222425" width="0.5" layer="16"/>
 <wire x1="2.98125" y1="-3.222425" x2="2.86603125" y2="-3.222425" width="0.5" layer="16"/>
-<wire x1="3.89155" y1="-3.91079375" x2="3.8" y2="-3.8" width="0" layer="19" extent="1-16"/>
+<via x="3.86625" y="-3.88375" extent="1-16" drill="0.2"/>
+<via x="4.20625" y="-4.17375" extent="1-16" drill="0.2"/>
+<wire x1="3.86625" y1="-3.88375" x2="3.8" y2="-3.8" width="0" layer="19" extent="1-1"/>
+<wire x1="3.89155" y1="-3.91079375" x2="3.86625" y2="-3.88375" width="0" layer="19" extent="16-16"/>
+<wire x1="4.20625" y1="-4.17375" x2="3.89155" y2="-3.91079375" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R$25" pad="OUT"/>
@@ -3668,15 +3729,8 @@ Covered vias can be set in Masks (Limit).
 <signal name="N$34">
 <wire x1="-5.75" y1="0.75" x2="-5.25" y2="0.75" width="0.15" layer="1"/>
 </signal>
-<signal name="GND1">
-<via x="-28.2" y="17.5" extent="1-16" drill="3"/>
-<via x="-14.1" y="17.5" extent="1-16" drill="2.1"/>
-<wire x1="-14.1" y1="17.5" x2="-28.2" y2="17.5" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="GND2">
-<via x="11.925" y="-17.5" extent="1-16" drill="3"/>
-<via x="26.025" y="-17.5" extent="1-16" drill="2.1"/>
-<wire x1="11.925" y1="-17.5" x2="26.025" y2="-17.5" width="0" layer="19" extent="1-1"/>
+<signal name="N$29">
+<wire x1="0" y1="7.5" x2="0" y2="6" width="0.3" layer="1"/>
 </signal>
 </signals>
 <errors>
@@ -3870,9 +3924,16 @@ Covered vias can be set in Masks (Limit).
 <approved hash="19,16,98606380677d9c9d"/>
 <approved hash="19,16,b70b3b66e7ac9164"/>
 <approved hash="19,16,8966e1152364b1b2"/>
+<approved hash="19,1,9a3dc2061484b4e4"/>
+<approved hash="19,1,7f145c82787f535b"/>
+<approved hash="19,16,9a3dc2061484b4e4"/>
+<approved hash="19,16,7f145c82787f535b"/>
+<approved hash="5,16,bac4deb43202137a"/>
+<approved hash="5,16,42afc0f2cf69313c"/>
+<approved hash="4,16,a2416e494248441d"/>
 <approved hash="19,1,c93d9a80e9600baf"/>
-<approved hash="19,1,005dfa1e1cb20708"/>
 <approved hash="19,1,3f619a57a9b10877"/>
+<approved hash="19,1,005dfa1e1cb20708"/>
 <approved hash="5,1,9fc07849e489b829"/>
 <approved hash="19,1,47339c9a2f6c37d4"/>
 <approved hash="19,1,af8b2641e604d914"/>
@@ -3904,29 +3965,25 @@ Covered vias can be set in Masks (Limit).
 <approved hash="19,1,2932980c9aef2bd1"/>
 <approved hash="19,1,8132ba0cb8ea83d4"/>
 <approved hash="19,1,ebe98a7cd5dc1f6e"/>
-<approved hash="19,1,36f3cccdc841327f"/>
 <approved hash="19,1,01a4d29ad19c02a2"/>
+<approved hash="19,1,36f3cccdc841327f"/>
 <approved hash="19,1,d476b7795e82db8f"/>
 <approved hash="19,1,809f53a15024831a"/>
-<approved hash="19,1,9a3dc2061484b4e4"/>
 <approved hash="19,1,b9fc7c007c03b9ff"/>
-<approved hash="19,1,2da34c9d4cb52d8b"/>
-<approved hash="19,1,ac9417aa163dad03"/>
-<approved hash="19,1,7f145c82787f535b"/>
 <approved hash="19,1,7c3366c6c20bd0c6"/>
 <approved hash="19,1,a6741d4a197da243"/>
-<approved hash="19,1,dbf0d1ced0efdad1"/>
+<approved hash="19,1,ac9417aa163dad03"/>
+<approved hash="19,1,2da34c9d4cb52d8b"/>
 <approved hash="19,1,d926d318d24dd873"/>
 <approved hash="19,1,dbf0d1ced0efdad1"/>
+<approved hash="19,1,dbf0d1ced0efdad1"/>
 <approved hash="19,1,d926d318d24dd873"/>
+<approved hash="5,1,516a7b6b7f965597"/>
+<approved hash="5,1,ffeda0ab45f9e71e"/>
+<approved hash="5,1,a09effb6e71945c6"/>
+<approved hash="5,1,55687f6f7b925195"/>
 <approved hash="19,1,b97c7c007c03b97f"/>
 <approved hash="19,1,3fe6f7120f00c0d4"/>
-<approved hash="19,1,11b3338d316c1352"/>
-<approved hash="19,1,19bc5b8259621b5c"/>
-<approved hash="19,1,29b3438d416d2b53"/>
-<approved hash="19,1,31b5cb8bc96b3355"/>
-<approved hash="19,1,b1b0cb8ec971b34f"/>
-<approved hash="19,1,a9b2438c416eab50"/>
 <approved hash="19,1,a833024d00aaaad4"/>
 <approved hash="19,1,da320c4c0eafd8d1"/>
 <approved hash="19,1,6032b24cb0a262dc"/>
@@ -3934,6 +3991,12 @@ Covered vias can be set in Masks (Limit).
 <approved hash="19,1,d8307a4e78a8dad6"/>
 <approved hash="19,1,ca32cc4cceadc8d3"/>
 <approved hash="19,1,3031ca4fc8af32d1"/>
+<approved hash="19,1,11b3338d316c1352"/>
+<approved hash="19,1,19bc5b8259621b5c"/>
+<approved hash="19,1,29b3438d416d2b53"/>
+<approved hash="19,1,31b5cb8bc96b3355"/>
+<approved hash="19,1,b1b0cb8ec971b34f"/>
+<approved hash="19,1,a9b2438c416eab50"/>
 <approved hash="19,1,d01ae67b5ccc931a"/>
 <approved hash="19,1,d1cae61ca3ab6dca"/>
 <approved hash="19,1,19323a0c38f31bcd"/>
@@ -3948,16 +4011,48 @@ Covered vias can be set in Masks (Limit).
 <approved hash="19,1,99328c0c8ee29bdc"/>
 <approved hash="19,1,2934820a80e82bd6"/>
 <approved hash="19,1,c930780e7aefcbd1"/>
-<approved hash="19,16,01a4d29ad19c02a2"/>
-<approved hash="19,16,d476b7795e82db8f"/>
-<approved hash="19,16,9a3dc2061484b4e4"/>
+<approved hash="4,14,b08df3f3544cf590"/>
+<approved hash="4,14,1b690b210dc61d8e"/>
+<approved hash="4,14,63872899f51d5ca5"/>
+<approved hash="4,14,591125d923375fff"/>
+<approved hash="4,16,b08df3f3544cf590"/>
+<approved hash="4,16,1b690b210dc61d8e"/>
 <approved hash="19,16,809f53a15024831a"/>
+<approved hash="19,16,d476b7795e82db8f"/>
+<approved hash="19,16,01a4d29ad19c02a2"/>
 <approved hash="19,16,36f3cccdc841327f"/>
-<approved hash="19,16,7f145c82787f535b"/>
-<approved hash="19,16,7c3366c6c20bd0c6"/>
-<approved hash="19,16,2da34c9d4cb52d8b"/>
 <approved hash="19,16,a6741d4a197da243"/>
+<approved hash="19,16,7c3366c6c20bd0c6"/>
 <approved hash="19,16,ac9417aa163dad03"/>
+<approved hash="19,16,2da34c9d4cb52d8b"/>
+<approved hash="5,16,d0a50385ca9783cf"/>
+<approved hash="5,16,10d5c3d0959fd6e2"/>
+<approved hash="5,16,22fc3f5438cdbf13"/>
+<approved hash="4,16,63872899f51d5ca5"/>
+<approved hash="4,16,591125d923375fff"/>
+<approved hash="5,16,a30ace2fd77be9ee"/>
+<approved hash="5,16,8797e370a0edf433"/>
+<approved hash="5,16,87681c8f5f12030d"/>
+<approved hash="5,16,79a5511e2587542f"/>
+<approved hash="5,16,32dc9cbc0bf3f350"/>
+<approved hash="5,16,a7cb0c522c522b39"/>
+<approved hash="5,16,68af9c6963bf0aaa"/>
+<approved hash="5,16,f59b9d4b6158905b"/>
+<approved hash="5,16,58caf3922c562bfc"/>
+<approved hash="5,16,0a6662b69ca56fa6"/>
+<approved hash="5,16,32642685344a4b68"/>
+<approved hash="5,16,975263949c42f757"/>
+<approved hash="5,16,3257635bf4000e52"/>
+<approved hash="5,16,3297d962cbc1b66a"/>
+<approved hash="5,16,7c1d3a363a437e58"/>
+<approved hash="5,16,7e1d383638737c68"/>
+<approved hash="5,16,38d606efb6adfd6f"/>
+<approved hash="5,16,ebb4a0645e778d76"/>
+<approved hash="5,16,2dc23fac33eefd42"/>
+<approved hash="5,16,8a7d5fbba16fea78"/>
+<approved hash="5,16,ded6ee496b0583fb"/>
+<approved hash="5,16,bae0e0cbe08cb8a7"/>
+<approved hash="5,16,9785972c380231ab"/>
 </errors>
 </board>
 </drawing>
