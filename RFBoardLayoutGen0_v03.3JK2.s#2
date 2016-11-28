@@ -2930,7 +2930,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="53.34" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DC$1" class="2">
+<net name="DC$1" class="0">
 <segment>
 <wire x1="-30.48" y1="48.26" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R$1" gate="G$1" pin="2"/>

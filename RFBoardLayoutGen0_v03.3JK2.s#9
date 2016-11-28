@@ -1698,7 +1698,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
 <smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
 <smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
@@ -1717,7 +1716,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.3" layer="1" cream="no"/>
 <text x="-6.975" y="4.725" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24_R4</text>
 <text x="6.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15">12</text>
-<text x="1.875" y="-7" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">15</text>
 <smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$06_R1" x="3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
 <smd name="RF$12_R2" x="3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
@@ -1735,7 +1733,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-1.45" y="-7.06" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
 <text x="-7.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">19</text>
 <text x="-2.5" y="6" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02_G1</text>
-<text x="1.875" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">05</text>
 <text x="1" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04_G2</text>
 <text x="4.825" y="4.925" size="0.6096" layer="21" font="vector" ratio="15">06_R1</text>
 <text x="6.125" y="2.5" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
@@ -1761,7 +1758,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
-<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
 <smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
 <smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
@@ -1782,7 +1778,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <symbol name="24DC+10RF_V2.0">
 <pin name="DC§01" x="-30.48" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§03" x="-15.24" y="35.56" length="middle" rot="R270"/>
-<pin name="DC§05" x="15.24" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§06" x="30.48" y="35.56" length="middle" rot="R270"/>
 <wire x1="-40.64" y1="33.02" x2="-40.64" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="40.64" y1="-33.02" x2="40.64" y2="33.02" width="0.254" layer="94"/>
@@ -1794,7 +1789,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pin name="DC§12" x="45.72" y="-20.32" length="middle" rot="R180"/>
 <pin name="DC§13" x="30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§07" x="45.72" y="20.32" length="middle" rot="R180"/>
-<pin name="DC§15" x="15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§17" x="-15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§18" x="-30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§019" x="-45.72" y="-20.32" length="middle"/>
@@ -1843,7 +1837,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§01" pad="DC$01"/>
 <connect gate="G$1" pin="DC§019" pad="DC§19"/>
 <connect gate="G$1" pin="DC§03" pad="DC§03"/>
-<connect gate="G$1" pin="DC§05" pad="DC§05"/>
 <connect gate="G$1" pin="DC§06" pad="DC§06"/>
 <connect gate="G$1" pin="DC§07" pad="DC§07"/>
 <connect gate="G$1" pin="DC§08" pad="DC§08"/>
@@ -1851,7 +1844,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§11" pad="DC§11"/>
 <connect gate="G$1" pin="DC§12" pad="DC§12"/>
 <connect gate="G$1" pin="DC§13" pad="DC$13"/>
-<connect gate="G$1" pin="DC§15" pad="DC§15"/>
 <connect gate="G$1" pin="DC§17" pad="DC§17"/>
 <connect gate="G$1" pin="DC§18" pad="DC§18"/>
 <connect gate="G$1" pin="DC§20" pad="DC§20"/>

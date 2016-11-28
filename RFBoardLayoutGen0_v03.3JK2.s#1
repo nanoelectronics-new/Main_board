@@ -407,8 +407,8 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <rectangle x1="-0.775" y1="-0.41" x2="-0.275" y2="0.39" layer="52" rot="R180"/>
 </package>
 <package name="LP-FILTER/CAPACITOR/0603_BOTTOM">
-<smd name="OUT" x="0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
-<smd name="IN" x="-0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180"/>
+<smd name="OUT" x="0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180" thermals="no"/>
+<smd name="IN" x="-0.8" y="0" dx="1.1" dy="0.9" layer="16" rot="R180" thermals="no"/>
 <rectangle x1="0.15" y1="-0.41" x2="0.65" y2="0.39" layer="52" rot="R180"/>
 <rectangle x1="-0.05" y1="-0.06" x2="0.05" y2="0.74" layer="52" rot="R270"/>
 <rectangle x1="-0.05" y1="-0.76" x2="0.05" y2="0.04" layer="52" rot="R270"/>
