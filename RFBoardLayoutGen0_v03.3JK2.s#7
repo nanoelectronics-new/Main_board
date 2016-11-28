@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="5" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="2" fill="13" visible="no" active="no"/>
+<layer number="3" name="Route3" color="2" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -21,7 +21,7 @@
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="11" fill="10" visible="no" active="no"/>
+<layer number="14" name="Route14" color="11" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="8" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="14" fill="3" visible="no" active="no"/>
-<layer number="30" name="bStop" color="15" fill="6" visible="no" active="no"/>
+<layer number="30" name="bStop" color="15" fill="10" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
@@ -1698,7 +1698,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§20" x="-5.25" y="-1.5" dx="1" dy="0.3" layer="1" roundness="100" rot="R9" cream="no"/>
 <smd name="DC§19" x="-5.25" y="-3" dx="1" dy="0.3" layer="1" roundness="100" rot="R15" cream="no"/>
 <smd name="DC$01" x="-3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
-<smd name="DC§05" x="1.5" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="DC§06" x="3" y="5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R75" cream="no"/>
 <text x="6.135" y="3.375" size="0.6096" layer="21" font="vector" ratio="15">07</text>
 <text x="6.135" y="1.625" size="0.6096" layer="21" font="vector" ratio="15">08</text>
@@ -1717,7 +1716,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="RF$21_G63" x="-5.25" y="0.75" dx="1" dy="0.3" layer="1" cream="no"/>
 <text x="-6.975" y="4.725" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">24_R4</text>
 <text x="6.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15">12</text>
-<text x="1.875" y="-7" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">15</text>
 <smd name="RF$04_G21" x="0.75" y="5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$06_R1" x="3.8" y="3.8" dx="1.5" dy="0.3" layer="1" rot="R40" cream="no"/>
 <smd name="RF$12_R2" x="3.8" y="-3.8" dx="1.5" dy="0.3" layer="1" rot="R140" cream="no"/>
@@ -1735,7 +1733,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-1.45" y="-7.06" size="0.6096" layer="21" font="vector" ratio="15" rot="SR90">17</text>
 <text x="-7.135" y="-3.625" size="0.6096" layer="21" font="vector" ratio="15" rot="SR0">19</text>
 <text x="-2.5" y="6" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">02_G1</text>
-<text x="1.875" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">05</text>
 <text x="1" y="6.125" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">04_G2</text>
 <text x="4.825" y="4.925" size="0.6096" layer="21" font="vector" ratio="15">06_R1</text>
 <text x="6.125" y="2.5" size="0.6096" layer="21" font="vector" ratio="15">09_G3</text>
@@ -1761,7 +1758,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="DC§17" x="-1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$16_G51" x="-0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="RF$14_G42" x="0.75" y="-5.25" dx="1" dy="0.3" layer="1" rot="R90" cream="no"/>
-<smd name="DC§15" x="1.5" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R90" cream="no"/>
 <smd name="RF$14_G41" x="2.25" y="-5.25" dx="1" dy="0.3" layer="1" rot="R93" cream="no"/>
 <smd name="DC$13" x="3" y="-5.25" dx="1" dy="0.3" layer="1" roundness="100" rot="R105" cream="no"/>
 <smd name="GND$3" x="-1.375" y="4.375" dx="1" dy="0.3" layer="1" rot="R180" cream="no"/>
@@ -1782,7 +1778,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <symbol name="24DC+10RF_V2.0">
 <pin name="DC§01" x="-30.48" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§03" x="-15.24" y="35.56" length="middle" rot="R270"/>
-<pin name="DC§05" x="15.24" y="35.56" length="middle" rot="R270"/>
 <pin name="DC§06" x="30.48" y="35.56" length="middle" rot="R270"/>
 <wire x1="-40.64" y1="33.02" x2="-40.64" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="40.64" y1="-33.02" x2="40.64" y2="33.02" width="0.254" layer="94"/>
@@ -1794,7 +1789,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pin name="DC§12" x="45.72" y="-20.32" length="middle" rot="R180"/>
 <pin name="DC§13" x="30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§07" x="45.72" y="20.32" length="middle" rot="R180"/>
-<pin name="DC§15" x="15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§17" x="-15.24" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§18" x="-30.48" y="-35.56" length="middle" rot="R90"/>
 <pin name="DC§019" x="-45.72" y="-20.32" length="middle"/>
@@ -1843,7 +1837,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§01" pad="DC$01"/>
 <connect gate="G$1" pin="DC§019" pad="DC§19"/>
 <connect gate="G$1" pin="DC§03" pad="DC§03"/>
-<connect gate="G$1" pin="DC§05" pad="DC§05"/>
 <connect gate="G$1" pin="DC§06" pad="DC§06"/>
 <connect gate="G$1" pin="DC§07" pad="DC§07"/>
 <connect gate="G$1" pin="DC§08" pad="DC§08"/>
@@ -1851,7 +1844,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="DC§11" pad="DC§11"/>
 <connect gate="G$1" pin="DC§12" pad="DC§12"/>
 <connect gate="G$1" pin="DC§13" pad="DC$13"/>
-<connect gate="G$1" pin="DC§15" pad="DC§15"/>
 <connect gate="G$1" pin="DC§17" pad="DC§17"/>
 <connect gate="G$1" pin="DC§18" pad="DC§18"/>
 <connect gate="G$1" pin="DC§20" pad="DC§20"/>
@@ -1903,7 +1895,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <clearance class="0" value="0.15"/>
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="2"/>
+<clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0.5" drill="0">
 <clearance class="2" value="0.41"/>
@@ -3241,6 +3233,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="U$16" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="-68.58" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$3"/>
+<pinref part="U$6" gate="G$1" pin="GND$1"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$4"/>
+<wire x1="2.54" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="15.24"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="2.54" y="30.48"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND$6"/>
+<pinref part="U$6" gate="G$1" pin="GND$5"/>
+<wire x1="-12.7" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND$2"/>
+<wire x1="-2.54" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-20.32"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-35.56"/>
 </segment>
 </net>
 <net name="N$18" class="2">
