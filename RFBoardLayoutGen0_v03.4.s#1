@@ -429,6 +429,7 @@ Source: www.tycoelectronics.com .. Electronics .. ENG_CD_1775146_A2.pdf</descrip
 <rectangle x1="-0.05" y1="-0.06" x2="0.05" y2="0.74" layer="52" rot="R270"/>
 <rectangle x1="-0.05" y1="-0.76" x2="0.05" y2="0.04" layer="52" rot="R270"/>
 <rectangle x1="-0.65" y1="-0.41" x2="-0.15" y2="0.39" layer="52" rot="R180"/>
+<rectangle x1="-0.125" y1="-0.5" x2="0.125" y2="0.5" layer="42"/>
 </package>
 </packages>
 <symbols>
